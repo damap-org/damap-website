@@ -10,6 +10,8 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google reCAPTCHA-->
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
@@ -233,6 +235,10 @@
                                 <textarea class="form-control" id="message" name="message" placeholder="Your Message *" onkeyup='enableSubmit()' required></textarea>
                             </div>
                         </div>
+                    </div>
+                    <!-- reCAPTCHA v2 Box-->
+                    <div class="row">
+                        <div class="g-recaptcha" data-sitekey="6LfLKFkgAAAAAHV75Ls_4U_c1EKr3hmm22ngGe5z"></div>
                     </div>
                     <!-- Submit message-->
                     <div class="text-center mb-3" id="submitMessageWrapper">

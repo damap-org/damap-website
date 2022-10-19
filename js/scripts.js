@@ -60,38 +60,52 @@ window.addEventListener('DOMContentLoaded', event => {
     var form = document.getElementById("contactForm");
 
     async function handleSubmit(event) {
-      event.preventDefault();
-      var statusWrapper = document.getElementById("submitMessageWrapper");
-      var status = document.getElementById("submitMessage");
-      var data = new FormData(event.target);
-      fetch(event.target.action, {
-        method: form.method,
-        body: data,
-        headers: {
-            'Accept': 'application/json'
+        event.preventDefault();
+        var statusWrapper = document.getElementById("submitMessageWrapper");
+        var status = document.getElementById("submitMessage");
+        var data = new FormData(event.target);
+        
+        // check reCaptcha response first
+        var captchaResponse = document.getElementById('g-recaptcha-response').value;
+        if (captchaResponse.length == 0 ) {
+            statusWrapper.classList.add("text-danger");
+            status.innerHTML = "Please verify that you are not a robot.";
         }
-      }).then(response => {
-        if (response.ok) {
-          statusWrapper.classList.add("text-white");
-          status.innerHTML = "Your message was successfully sent!";
-          form.reset();
-        } else {
-          response.json().then(data => {
-            if (Object.hasOwn(data, 'errors')) {
-              statusWrapper.classList.add("text-danger");
-              status.innerHTML = data["errors"].map(error => error["message"]).join(", ");
-            } else {
-              statusWrapper.classList.add("text-danger");
-              status.innerHTML = "Oops! There was a problem sending your message.";
-            }
-          })
+        else {
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    statusWrapper.classList.add("text-white");
+                    status.innerHTML = "Your message was successfully sent!";
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            statusWrapper.classList.add("text-danger");
+                            status.innerHTML = data["errors"].map(error => error["message"]).join(", ");
+                        } else {
+                            statusWrapper.classList.add("text-danger");
+                            status.innerHTML = "Oops! There was a problem sending your message.";
+                        }
+                    })
+                }
+            }).catch(error => {
+                statusWrapper.classList.add("text-danger");
+                status.innerHTML = "Oops! There was a problem sending your message.";
+            });
+            // reset the reCaptcha
+            grecaptcha.reset();
         }
-      }).catch(error => {
-        statusWrapper.classList.add("text-danger");
-        status.innerHTML = "Oops! There was a problem sending your message.";
-      });
+        
+        // reset form fields and button on success or error to discourage manual spam
+        form.reset();
+        document.getElementById('submitButton').disabled = true;
     }
-    form.addEventListener("submit", handleSubmit)
+    form.addEventListener("submit", handleSubmit);
 });
 
 // enable form submit button when all elements are not empty

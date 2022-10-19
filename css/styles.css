@@ -11929,6 +11929,12 @@ section#contact form#contactForm :-ms-input-placeholder {
   color: #ced4da;
 }
 
+.g-recaptcha > div {
+  text-align: center;
+  width: auto !important;
+  height: auto !important;
+}
+
 .footer {
   text-align: center;
   font-size: 0.9rem;
