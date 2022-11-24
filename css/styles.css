@@ -6635,7 +6635,11 @@ textarea.form-control-lg {
   color: #212529;
 }
 .link-dark:hover, .link-dark:focus {
-  color: #1a1e21;
+  color: #71808e;
+}
+
+.link-muted {
+  color: #6c757d;
 }
 
 .ratio {
@@ -11464,9 +11468,6 @@ p {
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   margin-bottom: 4rem;
 }
-.link-muted {
-  color: #6c757d;
-}
 
 @media (min-width: 768px) {
   section {
@@ -11604,6 +11605,10 @@ header.masthead .masthead-heading {
 
 #features ul {
   text-align: left;
+}
+
+#finger_img:hover {
+  transform: scale(1.3); /* 130% zoom */
 }
 
 #code .code-item {
