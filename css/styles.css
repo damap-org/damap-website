@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
 * Damap website (https://damap.org)
-* Copyright 2022 TU Wien
+* Copyright 2022-2023 TU Wien
 * Licensed under MIT (https://github.com/tuwien-csd/damap-website/blob/master/LICENSE)
 */
 /*!
@@ -11605,6 +11605,11 @@ header.masthead .masthead-heading {
 
 #features ul {
   text-align: left;
+}
+
+#community img {
+  max-width: 100%;
+  max-height: 100px;
 }
 
 #finger_img:hover {
