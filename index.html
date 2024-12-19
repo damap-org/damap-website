@@ -31,9 +31,9 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#why_damap">Why DAMAP?</a></li>
                         <li class="nav-item"><a class="nav-link" href="#community">Community</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#tryit">Try it out</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#try_it">Try it out</a></li>
                         <li class="nav-item"><a class="nav-link" href="#code">Code</a></li>
                         <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -45,43 +45,36 @@
         <header class="masthead">
             <div class="container">
                 <div class="masthead-heading text-uppercase">DAMAP</div>
-                <div class="masthead-subheading">A tool for machine actionable DMPs</div>
+                <div class="masthead-subheading">Saving researchers' time creating DMPs</div>
                 <br>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#features">Features</a>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#why_damap">Features</a>
             </div>
         </header>
-        <!-- "About" section-->
+        <!-- "About" Grid-->
         <section class="page-section" id="about">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase mb-4">About DAMAP</h2>
+                    <h2 class="section-heading mb-5">About DAMAP</h2>
                 </div>
-                    <div class="row fs-5">
-                        <p>
-                            DAMAP supports researchers in managing both data and code along the research data lifecycle and helps meet funders' requirements by generating DMPs in funder-specific templates.
-                            DAMAP can integrate with an institution's existing databases, e.g., project, HR, to pull relevant data into a DMP, increasing accuracy and reducing the overall effort needed to complete a DMP.
-                        </p>
-                        <p>
-                            The content and structure of DAMAP is based on Science Europe's Core Requirements for Data Management Plans.
-                            The tool guides users through all sections of a DMP in ten steps by asking questions, suggesting text, and providing helpful information.
-                            As a result, DAMAP delivers a DMP as a document that can be customized and used for submission to European and national research funders.
-                            Furthermore, the tool is compatible with the RDA's recommendation for machine-actionable DMPs and offers a JSON export of the DMP.
-                        </p>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <h5 class="section-subheading text-muted my-5 fs-4">See what DAMAP can do</h5>
-                    <a href="https://www.youtube.com/watch?v=IxQzqy26ZO4" target="_blank" aria-label="Damap demo - Youtube video">
-                        <img class="img-fluid" src="assets/img/video_screenshot.png">
-                    </a>
+                <div class="row fs-5">
+                    <p>
+                        DAMAP supports researchers in managing both data and code along the research data lifecycle and helps meet funders' requirements by generating DMPs in funder-specific templates.
+                        DAMAP can integrate with an institution's existing databases, e.g., project, HR, to pull relevant data into a DMP, increasing accuracy and reducing the overall effort needed to complete a DMP.
+                    </p>
+                    <p>
+                        The content and structure of DAMAP is based on Science Europe's Core Requirements for Data Management Plans.
+                        The tool guides users through all sections of a DMP in ten steps by asking questions, suggesting text, and providing helpful information.
+                        As a result, DAMAP delivers a DMP as a document that can be customized and used for submission to European and national research funders.
+                        Furthermore, the tool is compatible with the RDA's recommendation for machine-actionable DMPs and offers a JSON export of the DMP.
+                    </p>
                 </div>
             </div>
         </section>
-        <!-- Features-->
-        <section class="page-section bg-light" id="features">
+        <!-- Why DAMAP? (Features) Grid -->
+        <section class="page-section bg-light" id="why_damap">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Features</h2>
+                    <h2 class="section-heading">Why DAMAP?</h2>
                     <h3 class="section-subheading text-muted"></h3>
                 </div>
                 <div class="row text-center">
@@ -91,7 +84,9 @@
                             <i class="fas fa-hand-point-right fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Guidance</h4>
-                        <p class="text-muted">DAMAP guides you step by step through the different sections of a DMP following the <a class="link-muted" href="https://doi.org/10.5281/zenodo.4915861" target="_blank">Practical Guide to the International Alignment of Research Data Management</a></p>
+                        <p class="text-muted">
+                            DAMAP guides you step by step through the different sections of a DMP following the <a class="link-muted" href="https://doi.org/10.5281/zenodo.4915861" target="_blank">Practical Guide to the International Alignment of Research Data Management</a>
+                        </p>
                     </div>
                     <div class="col-md-3">
                         <span class="fa-stack fa-4x">
@@ -99,7 +94,16 @@
                             <i class="fas fa-download fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Export</h4>
-                        <p class="text-muted">DAMAP exports a pre-filled DMP as a Word document that you can customize and use for submission to funders</p>
+                        <p class="text-muted">
+                            <ul class="text-muted text-start">
+                                DAMAP exports a pre-filled DMP as a Word document that you can customize and use for submission to funders.
+                                <br>
+                                Supported templates:
+                                <li>FWF</li>
+                                <li>Horizon Europe</li>
+                                <li>Science Europe</li>
+                            </ul>
+                        </p>
                     </div>
                     <div class="col-md-3">
                         <span class="fa-stack fa-4x">
@@ -107,7 +111,7 @@
                             <i class="fas fa-gears fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Automation</h4>
-                        <ul class="text-muted">
+                        <ul class="text-muted text-start">
                             DAMAP saves you work by:
                             <li>pre-filling content with detailed information from your CRIS application and other systems</li>
                             <li>providing wizards, guidance, and item lists to choose from</li>
@@ -123,39 +127,66 @@
                         <p class="text-muted">DAMAP is compatible with the <a class="link-muted" href="https://doi.org/10.15497/rda00039" target="_blank">RDA recommendation on machine actionable DMPs</a></p>
                     </div>
                 </div>
+                <div class="row text-center">
+                    <h5 class="section-subheading text-muted my-5 fs-4">See what DAMAP can do</h5>
+                    <a href="https://www.youtube.com/watch?v=IxQzqy26ZO4" target="_blank" aria-label="Damap demo - Youtube video">
+                        <img class="img-fluid" src="assets/img/video_screenshot.png">
+                    </a>
+                </div>
             </div>
         </section>
         <!-- Community Grid-->
         <section class="page-section" id="community">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Community</h2>
+                    <h2 class="section-heading">Community</h2>
                     <h5 class="section-subheading text-muted my-5 fs-4">These institutions use DAMAP and integrated it into their data management planning:</h5>
                 </div>
                 <div class="row text-center mt-5">
-                    <div class="col-sm-4 mb-5">
-                        <a href="https://dmptool.tuwien.ac.at" target="_blank">
-                            <img src="assets/img/community/TU_Wien_Signet.png" alt="TU Wien Logo" title="TU Wien Instance"/>
-                        </a>
+                    <div class="col-sm-4">
+                        <div class="mb-4">
+                            <a href="https://www.tuwien.at/" target="_blank">
+                                <img src="assets/img/community/TU_Wien_Signet.png" alt="TU Wien Logo" title="TU Wien Website"/>
+                            </a>
+                        </div>
+                        <div class="mb-5">
+                            <a class="link-dark text-decoration-none" href="https://dmptool.tuwien.ac.at" target="_blank">
+                                <h4>TU Wien DMP Tool</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="mb-4">
+                            <a class="link-dark" href="https://www.tugraz.at/" target="_blank">
+                                <img src="assets/img/community/TU_Graz_Signet.png" alt="TU Graz Logo" title="TU Graz Website"/>
+                            </a>
+                        </div>
+                        <div class="mb-5">
+                            <a class="link-dark text-decoration-none" href="https://dmp.tugraz.at/" target="_blank">
+                                <h4>TU Graz DMP Tool</h4>
+                            </a>
+                        </div>
                     </div>
                     <div class="col-sm-4 mb-5">
-                        <a href="https://dmp.tugraz.at" target="_blank">
-                            <img src="assets/img/community/TU_Graz_Signet.png" alt="TU Graz Logo" title="TU Graz Instance"/>
-                        </a>
-                    </div>
-                    <div class="col-sm-4 mb-5">
-                        <a href="https://dmptool.medunigraz.at/" target="_blank">
-                            <img src="assets/img/community/med_uni_graz_signet.png" alt="MU Graz Logo" title="MU Graz Instance"/>
-                        </a>
+                        <div class="mb-4">
+                            <a class="link-dark" href="https://www.medunigraz.at/" target="_blank">
+                                <img src="assets/img/community/med_uni_graz_signet.png" alt="MU Graz Logo" title="MU Graz Website"/>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="link-dark text-decoration-none" href="https://dmptool.medunigraz.at/" target="_blank">
+                                <h4>Med Uni Graz DMP Tool</h4>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- "Try it out" Grid-->
-        <section class="page-section bg-light" id="tryit">
+        <section class="page-section bg-light" id="try_it">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Try it out</h2>
+                    <h2 class="section-heading">Try it out</h2>
                 </div>
                 <div class="row text-center mt-5">
                     <h5 class="section-subheading">
@@ -169,18 +200,27 @@
                         <p>
                             Note: additional services have been integrated with the application to simulate how the tool will operate in production.
                         </p>
+                        <p class="mt-5">
+                            <i class="fa-regular fa-lightbulb"></i>
+                            Tip: use our <a class="link-dark" href="https://zenodo.org/records/14000899/preview/DAMAP_tutorial_202410.pdf?include_deleted=0" target="_blank">tutorial</a> to help you navigate DAMAP and create a DMP.
+                        </p>
                     </h5>
                 </div>
             </div>
         </section>
-        <!-- code Grid-->
+        <!-- Code Grid-->
         <section class="page-section" id="code">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Get our code</h2>
+                    <h2 class="section-heading">Get our code</h2>
                     <h3 class="section-subheading text-muted"></h3>
                 </div>
                 <div class="row">
+                    <h5 class="section-subheading mb-5">
+                        <p class="text-center">
+                            DAMAP is open-source and available under the <a class="link-dark" href="https://opensource.org/license/mit" target="_blank">MIT license</a>.
+                        </p>
+                    </h5>
                     <div class="col-lg-6 col-sm-6 mb-4">
                         <!-- code item 1-->
                         <div class="code-item">
@@ -206,11 +246,11 @@
                 </div>
             </div>
         </section>
-        <!-- Team-->
+        <!-- Team Grid -->
         <section class="page-section bg-light" id="team">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase mb-5">Damap Team</h2>
+                    <h2 class="section-heading mb-5">DAMAP Team</h2>
                 </div>
                 <div class="row">
                     <div class="col-lg-4">
@@ -224,13 +264,6 @@
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="assets/img/team/christiane_stork.jpeg" alt="Image of Christiane Stork" />
                             <h4>Christiane Stork</h4>
-                            <p class="text-muted"></p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" style="object-fit: cover;" src="assets/img/team/david_eckhard.jpg" alt="Image of David Eckhard" />
-                            <h4>David Eckhard</h4>
                             <p class="text-muted"></p>
                         </div>
                     </div>
@@ -295,6 +328,13 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="team-member">
+                            <img class="mx-auto rounded-circle" style="object-fit: cover;" src="assets/img/team/david_eckhard.jpg" alt="Image of David Eckhard" />
+                            <h4>David Eckhard</h4>
+                            <p class="text-muted"></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
                             <img class="mx-auto rounded-circle" src="assets/img/team/lukas_arnhold.png" alt="Image of Lukas Arnhold" />
                             <h4>Lukas Arnhold</h4>
                             <p class="text-muted"></p>
@@ -310,11 +350,11 @@
                 </div>
             </div>
         </section>
-        <!-- Contact-->
+        <!-- Contact Grid -->
         <section class="page-section" id="contact">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Contact Us</h2>
+                    <h2 class="section-heading">Contact Us</h2>
                     <h3 class="section-subheading text-white fs-4">For questions or test instance access, please fill out the form below.</h3>
                 </div>
                 <form id="contactForm" action="https://formspree.io/f/xqknwogd" method="POST">
@@ -349,7 +389,7 @@
                 </form>
             </div>
         </section>
-        <!-- Footer-->
+        <!-- Footer -->
         <footer class="footer py-4">
             <div class="container">
                 <div class="row align-items-center">
