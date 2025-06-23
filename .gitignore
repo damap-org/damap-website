@@ -1,2 +1,7 @@
 # Idea software family
 .idea/
+.cache
+venv
+dist
+artifacts
+site

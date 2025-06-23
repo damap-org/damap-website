@@ -1,0 +1,62 @@
+site_name: DAMAP
+site_url: https://docs.damap.org/
+repo_url: https://github.com/damap-org/
+edit_uri: '/damap-website/edit/main/'
+copyright: © TU Wien 2025
+theme:
+  name: material
+  logo: logo.svg
+  favicon: logo.svg
+  custom_dir: overrides
+  palette:
+    primary: black
+    accent: green
+  font: false
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.autohide
+    - search.suggest
+    - search.highlight
+    - content.code.annotate
+    - navigation.footer
+  language: en
+  include_search_page: false
+  search_index_only: 'false'
+  icon:
+    annotation: material/arrow-right-circle
+extra_css:
+- "custom.css"
+extra:
+  generator: false
+  footer_links:
+    - link: /contact/
+      text: Contact
+    - link: https://www.tuwien.at/index.php?eID=dms&s=4&path=Documents/Data%20Protection%20Declaration%20Other/Data%20Protection%20Declaration%20Websites.pdf
+      text: Privacy Policy
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - meta
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid_custom
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: True
+      separator: "-"
+plugins:
+  - privacy
+  - search
+  - awesome-pages
+  - macros

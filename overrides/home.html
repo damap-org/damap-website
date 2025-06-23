@@ -1,0 +1,53 @@
+{% extends "main.html" %}
+{% block tabs %}
+  {{ super() }}
+  <style>
+      .mdx-hero {
+        background: url("damap-hero.webp") no-repeat center;
+        background-size: cover;
+        height: 35vw;
+        color: #fff;
+        position:relative;
+      }
+      .mdx-hero__content {
+        width:100vw;
+        text-align: center;
+        font-size: 4vw;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .mdx-hero__line1 {
+        font-weight: bold;
+        font-size: 10vw;
+      }
+      h1, h2 {
+        text-align:center;
+      }
+      .md-content__inner {
+        font-size:1rem;
+        line-height: 1.5rem;
+      }
+  </style>
+  <section class="mdx-container">
+      <div class="mdx-hero">
+        <div class="mdx-hero__content">
+          <div class="mdx-hero__line1">
+            DAMAP
+          </div>
+          <div class="mdx-hero__line2">
+            Simplifying Data Management Plans
+          </div>
+        </div>
+    </div>
+  </section>
+{% endblock %}
+
+{% block content %}
+  {% include "partials/tags.html" %}
+  {% include "partials/actions.html" %}
+  {{ page.content }}
+  {% include "partials/source-file.html" %}
+  {% include "partials/feedback.html" %}
+  {% include "partials/comments.html" %}
+{% endblock %}

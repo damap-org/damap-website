@@ -1,0 +1,7 @@
+title: Reference Manual
+nav:
+- Overview: index.md
+- deployment
+- configuration
+- cris
+- customization

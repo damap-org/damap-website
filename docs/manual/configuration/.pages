@@ -1,0 +1,6 @@
+title: Configuration
+nav:
+- Overview: index.md
+- General options: general.md
+- Authentication: authentication.md
+- Database: database.md
