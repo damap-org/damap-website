@@ -1,8 +1,7 @@
-Repository for hosting information for DAMAP  
-Info website: https://tuwien-csd.github.io/damap-website/  
+Repository for hosting information for DAMAP
 
-Website: https://damap-qa.apps.dev.csd.tuwien.ac.at/
+Website: https://damap.org/
 
 Repositories:  
-[damap-frontend](https://github.com/tuwien-csd/damap-frontend)  
-[damap-backend](https://github.com/tuwien-csd/damap-backend)
+[damap-frontend](https://github.com/damap-org/damap-frontend)  
+[damap-backend](https://github.com/damap-org/damap-backend)

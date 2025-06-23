@@ -1,0 +1,16 @@
+<div class="md-copyright">
+  {% if config.copyright %}
+    <div class="md-copyright__highlight">
+      {{ config.copyright }}
+    </div>
+  {% endif %}
+</div>
+<div class="md-links">
+  {% for footer_link in config.extra.footer_links %}
+    {% set rel = "noopener" %}
+    {% set title = footer_link.text %}
+    <a href="{{ footer_link.link }}" target="_blank">
+      {{ footer_link.text }}
+    </a>
+  {% endfor %}
+</div>
