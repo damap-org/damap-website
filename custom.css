@@ -1,0 +1,72 @@
+@media screen and (min-width: 76.2345em) {
+    .md-header__inner.md-grid {
+        position: relative;
+    }
+
+    .md-header__button.md-logo {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .md-header__button.md-logo img {
+        margin-top: 0.1rem;
+        height: 2.4rem;
+        width: 2.4rem;
+    }
+
+    .md-header__topic {
+        margin-left: 2.4rem;
+    }
+
+    [dir="ltr"] .md-header__title {
+        margin-left: 0;
+    }
+}
+
+.md-button.md-button--full {
+    width:100%;
+    text-align: center;
+}
+
+.grid.cards.showcase p {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.grid.grid__4 {
+    grid-template-columns: repeat(auto-fit,minmax(min(100%,12rem),1fr));
+}
+
+.md-footer .md-links {
+    margin: auto .6rem;
+}
+
+.md-footer .md-links a {
+    padding-left: .6rem;
+    padding-right:.6rem;
+}
+
+.md-typeset p + h1, .md-typeset div + h1 {
+    margin-top:5rem;
+}
+
+.md-typeset .superlarge {
+  --md-icon-size: 6em;
+}
+
+.md-tabs .md-tabs__list {
+    justify-content: center;
+}
+
+.md-tabs .md-tabs__list a {
+    font-size: 1rem;
+    line-height: 2.4rem;
+    margin-top:0;
+    display: block;
+}
