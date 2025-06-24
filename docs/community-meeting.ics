@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:Europe/Vienna
+LAST-MODIFIED:20240422T053450Z
+TZURL:https://www.tzurl.org/zoneinfo-outlook/Europe/Vienna
+X-LIC-LOCATION:Europe/Vienna
+BEGIN:DAYLIGHT
+TZNAME:CEST
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+DTSTART:19700329T020000
+RRULE:FREQ=MONTHLY;COUNT=12;BYDAY=-1TU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:CET
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+DTSTART:19701025T030000
+RRULE:FREQ=MONTHLY;COUNT=12;BYDAY=-1TU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20250624T194045Z
+UID:1750793970712-56453@ical.marudot.com
+DTSTART;TZID=Europe/Vienna:20250729T143000
+DTEND;TZID=Europe/Vienna:20250729T151500
+SUMMARY:DAMAP community call
+URL:https://tuwien.zoom.us/j/69725075402?pwd=6fG3OwAyg7f2wqe1oyVuPh8HOq7AIr.1
+DESCRIPTION:\nHi everyone\,\n\nAs announced in various meetings\, we are having a monthly DAMAP community call that serves as an open forum to discuss all things related to DAMAP\, (machine-actionable) DMPs in general\, funder templates\, new and upcoming requirements as well as other relevant news/information.\n\nThere is no specific agenda and this is not a webinar or slideshow presentation. It's a way for us to communicate directly and discuss features\, deployments\, issues\, roadmap as well as future plans and strategies. Concrete outcomes from the call will be documented afterwards\, e.g. feature requests or bug reports in the form of GitHub issues\, improved user and developer documentation from your feedback\, etc.\n\nThis call is entirely optional - feel free to ignore it or just participate occasionally.\n\nhttps://tuwien.zoom.us/j/69725075402?pwd=6fG3OwAyg7f2wqe1oyVuPh8HOq7AIr.1\nMeeting-ID: 697 2507 5402\nPassword: DAMAP-0rg\n\n\nIf you would like to keep a closer eye on the development\, you can also check out our GitHub org: https://github.com/damap-org
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:DAMAP community call
+TRIGGER:-PT5M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

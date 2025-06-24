@@ -8,6 +8,12 @@ hide:
 title: DAMAP - Simplifying Data Management Plans
 ---
 
+<div class="box">
+<div class="box__text">Next community meeting:</div>
+<div class="box__text"><time datetime="2025-07-29T14:30:00+0200">July 29, 14:30</time></div>
+<div><a href="community-meeting.ics" class="md-button sm">Calendar link</a></div>
+</div>
+
 # About DAMAP
 
 DAMAP supports researchers in managing both data and code along the research data lifecycle and helps meet funders' requirements by generating DMPs in funder-specific templates. DAMAP can integrate with an institution's existing databases, e.g., project, HR, to pull relevant data into a DMP, increasing accuracy and reducing the overall effort needed to complete a DMP.
@@ -55,7 +61,28 @@ The content and structure of DAMAP is based on Science Europe's Core Requirement
 
 # Community
 
-<p class="center">These institutions use DAMAP and integrated it into their data management planning:</p>
+<div class="calendar__block">
+<div class="calendar" markdown>
+    <h2>Next community meeting</h2>
+    <time datetime="2025-07-39T14:30:00+0200">
+        <span class="calendar__dow">Tue</span>
+        <span class="calendar__day">Jul 29</span>
+        <span class="calendar__time">14:30</span>
+    </time>
+    <footer>
+        <a href="community-meeting.ics" class="md-button md-button--full">Calendar link</a>
+    </footer>
+</div>
+<div class="calendar__text">
+<p>
+The DAMAP community is a collaboration between several universities in different stages of deploying DAMAP to create DMPs as well as for student education in research data management techniques.
+</p>
+<p>
+We work together on a wide range of topics from DMPs to general data management questions to technical integration of various DMP management and analysis tools. Join us <strong>on the last Tuesday of every month</strong> for a lively discussion on any of these topics. No matter if you are a seasoned data steward or an enthusiast just starting out, everyone is welcome here.
+</p>
+</div>
+</div>
+<p class="center">These institutions have already deployed DAMAP and have integrated it into their data management planning. Several more universities are in the process of deploying it and are planning to use it in the future.</p>
 
 <div class="grid cards showcase" markdown>
 
