@@ -10,10 +10,11 @@ theme:
   custom_dir: overrides
   palette:
     primary: black
-    accent: green
+    accent: yellow
   font: false
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
     - toc.autohide
     - search.suggest
