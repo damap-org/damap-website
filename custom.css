@@ -70,3 +70,18 @@
     margin-top:0;
     display: block;
 }
+
+.md-typeset .headerlink {
+    display: none;
+}
+
+@media screen and (min-width: 76.2345em) {
+  .md-header .md-ellipsis {
+      display:none;
+  }
+  .md-header__button.md-logo img {
+    margin-top: 0.1rem;
+    height: auto;
+    width: 9.6rem;
+  }
+}

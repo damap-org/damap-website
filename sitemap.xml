@@ -1,91 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://docs.damap.org/</loc>
+         <loc>https://damap.org/</loc>
          <lastmod>2025-06-24</lastmod>
     </url>
     <url>
-         <loc>https://docs.damap.org/contact/</loc>
+         <loc>https://damap.org/contact/</loc>
          <lastmod>2025-06-24</lastmod>
     </url>
     <url>
-         <loc>https://docs.damap.org/manual/</loc>
+         <loc>https://damap.org/manual/</loc>
          <lastmod>2025-06-24</lastmod>
     </url>
     <url>
-         <loc>https://docs.damap.org/manual/configuration/</loc>
+         <loc>https://damap.org/manual/configuration/</loc>
          <lastmod>2025-06-24</lastmod>
     </url>
     <url>
-         <loc>https://docs.damap.org/manual/configuration/authentication/</loc>
+         <loc>https://damap.org/manual/configuration/authentication/</loc>
          <lastmod>2025-06-24</lastmod>
     </url>
     <url>
-         <loc>https://docs.damap.org/manual/configuration/database/</loc>
+         <loc>https://damap.org/manual/configuration/database/</loc>
          <lastmod>2025-06-24</lastmod>
     </url>
     <url>
-         <loc>https://docs.damap.org/manual/configuration/general/</loc>
+         <loc>https://damap.org/manual/configuration/general/</loc>
          <lastmod>2025-06-24</lastmod>
     </url>
     <url>
-         <loc>https://docs.damap.org/manual/cris/</loc>
+         <loc>https://damap.org/manual/cris/</loc>
          <lastmod>2025-06-24</lastmod>
     </url>
     <url>
-         <loc>https://docs.damap.org/manual/cris/custom/</loc>
+         <loc>https://damap.org/manual/cris/custom/</loc>
          <lastmod>2025-06-24</lastmod>
     </url>
     <url>
-         <loc>https://docs.damap.org/manual/cris/orcid/</loc>
+         <loc>https://damap.org/manual/cris/orcid/</loc>
          <lastmod>2025-06-24</lastmod>
     </url>
     <url>
-         <loc>https://docs.damap.org/manual/cris/pure/</loc>
+         <loc>https://damap.org/manual/cris/pure/</loc>
          <lastmod>2025-06-24</lastmod>
     </url>
     <url>
-         <loc>https://docs.damap.org/manual/customization/</loc>
+         <loc>https://damap.org/manual/customization/</loc>
          <lastmod>2025-06-24</lastmod>
     </url>
     <url>
-         <loc>https://docs.damap.org/manual/customization/colors/</loc>
+         <loc>https://damap.org/manual/customization/colors/</loc>
          <lastmod>2025-06-24</lastmod>
     </url>
     <url>
-         <loc>https://docs.damap.org/manual/customization/logos/</loc>
+         <loc>https://damap.org/manual/customization/logos/</loc>
          <lastmod>2025-06-24</lastmod>
     </url>
     <url>
-         <loc>https://docs.damap.org/manual/customization/texts/</loc>
+         <loc>https://damap.org/manual/customization/texts/</loc>
          <lastmod>2025-06-24</lastmod>
     </url>
     <url>
-         <loc>https://docs.damap.org/manual/deployment/</loc>
+         <loc>https://damap.org/manual/deployment/</loc>
          <lastmod>2025-06-24</lastmod>
     </url>
     <url>
-         <loc>https://docs.damap.org/manual/deployment/backend/</loc>
+         <loc>https://damap.org/manual/deployment/backend/</loc>
          <lastmod>2025-06-24</lastmod>
     </url>
     <url>
-         <loc>https://docs.damap.org/manual/deployment/database/</loc>
+         <loc>https://damap.org/manual/deployment/database/</loc>
          <lastmod>2025-06-24</lastmod>
     </url>
     <url>
-         <loc>https://docs.damap.org/manual/deployment/fits/</loc>
+         <loc>https://damap.org/manual/deployment/fits/</loc>
          <lastmod>2025-06-24</lastmod>
     </url>
     <url>
-         <loc>https://docs.damap.org/manual/deployment/frontend/</loc>
+         <loc>https://damap.org/manual/deployment/frontend/</loc>
          <lastmod>2025-06-24</lastmod>
     </url>
     <url>
-         <loc>https://docs.damap.org/manual/deployment/gotenberg/</loc>
+         <loc>https://damap.org/manual/deployment/gotenberg/</loc>
          <lastmod>2025-06-24</lastmod>
     </url>
     <url>
-         <loc>https://docs.damap.org/manual/deployment/oidc/</loc>
+         <loc>https://damap.org/manual/deployment/oidc/</loc>
          <lastmod>2025-06-24</lastmod>
     </url>
 </urlset>
