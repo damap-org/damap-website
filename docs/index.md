@@ -53,10 +53,6 @@ The content and structure of DAMAP is based on Science Europe's Core Requirement
 
 </div>
 
-# See what DAMAP can do
-
-[![Screenshot of a video](video_screenshot.png)](https://www.youtube.com/watch?v=IxQzqy26ZO4){target="_blank"}
-
 # Community
 
 <p class="center">These institutions use DAMAP and integrated it into their data management planning:</p>
