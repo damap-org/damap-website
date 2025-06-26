@@ -8,10 +8,20 @@ hide:
 title: DAMAP - Simplifying Data Management Plans
 ---
 
-<div class="box">
-<div class="box__text">Next community meeting:</div>
-<div class="box__text"><time datetime="2025-07-29T14:30:00+0200">July 29, 14:30</time></div>
-<div><a href="community-meeting.ics" class="md-button sm">Calendar link</a></div>
+<div class="infobox">
+    <div class="infobox__item">
+        <div class="infobox__title">Next community meeting</div>
+        <div class="infobox__data">
+            <span class="infobox__text"><time datetime="2025-07-29T14:30:00+0200">July 29, 14:30</time></span>
+            <a href="community-meeting.ics" class="md-button sm">Calendar link</a>
+        </div>
+    </div>
+    <div class="infobox__item">
+        <div class="infobox__title">Latest blog post</div>
+        <div class="infobox__data">
+            <span class="infobox__text"><a href="/blog/2025/06/26/our-plans-for-a-shared-damap-service/">Our plans for a shared DAMAP service</a></span>
+        </div>
+    </div>
 </div>
 
 # About DAMAP
