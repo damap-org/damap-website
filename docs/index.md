@@ -19,7 +19,7 @@ title: DAMAP - Simplifying Data Management Plans
     <div class="infobox__item">
         <div class="infobox__title">Latest blog post</div>
         <div class="infobox__data">
-            <span class="infobox__text"><a href="/blog/2025/06/26/our-plans-for-a-shared-damap-service/">Our plans for a shared DAMAP service</a></span>
+            <span class="infobox__text"><a href="/blog/2025/07/15/an-early-look-at-the-common-dmp-api/">An early look at the common DMP API</a></span>
         </div>
     </div>
 </div>
