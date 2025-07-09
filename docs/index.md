@@ -22,6 +22,12 @@ title: DAMAP - Simplifying Data Management Plans
             <span class="infobox__text"><a href="/blog/2025/06/26/our-plans-for-a-shared-damap-service/">Our plans for a shared DAMAP service</a></span>
         </div>
     </div>
+    <div class="infobox__item">
+        <div class="infobox__title">Latest release</div>
+        <div class="infobox__data">
+            <span class="infobox__text"><a href="https://github.com/damap-org/damap-backend/releases/latest" target="_blank" rel="noopener noreferrer">DAMAP v4.6.0</a></span>
+        </div>
+    </div>
 </div>
 
 # About DAMAP
