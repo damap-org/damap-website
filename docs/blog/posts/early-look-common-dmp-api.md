@@ -60,3 +60,5 @@ Another feature we are adding is support for the [OSTrails DMP Evaluation Servic
 ## Make your voice heard
 
 What would help *you* in your daily work? Our monthly community calls are an *open forum* for all current and prospective DAMAP users to talk about ideas and challenges when working with DMPs. Your feedback is very valuable when deciding on the next feature to develop. The date and calendar link to the [next community call](../../index.md) are on the front page.
+
+*This work was co-funded by the European Union under Horizon project OSTrails 101130187.*
