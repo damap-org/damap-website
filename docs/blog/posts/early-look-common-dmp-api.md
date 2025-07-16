@@ -5,7 +5,7 @@ description: >
   Normally, an API is not an exciting topic to read about. It is meant to plug two pieces of software together. However, much like a guitarist plugging in their instrument, the new common standard DMP API will let you do a lot more with your DMPs than before. In this blog post, we are taking a first look at the standard multiple DMP tool makers are working on as part of the OSTrails project and how it affects DAMAP.
 ---
 
-Normally, an API is not an exciting topic to read about. It is meant to plug two pieces of software together. However, much like a guitarist plugging in their instrument, the new common standard DMP API will let you do a lot more with your DMPs than before. In this blog post, we are taking a first look at the standard that multiple DMP tool makers are working on as part of the [OSTrails project](https://ostrails.eu/dmps) and how it affects DAMAP.
+Normally, an API is not an exciting topic to read about. It is meant to plug two pieces of software together. However, much like a guitarist plugging in their instrument, the new common standard DMP API will let you do a lot more with your DMPs than before. In this blog post, we are taking a first look at the standard that multiple DMP tool makers are working on and how it affects DAMAP.
 
 <!-- more -->
 
