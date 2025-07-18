@@ -25,7 +25,7 @@ title: DAMAP - Simplifying Data Management Plans
     <div class="infobox__item">
         <div class="infobox__title">Latest release</div>
         <div class="infobox__data">
-            <span class="infobox__text"><a href="https://github.com/damap-org/damap-backend/releases/latest" target="_blank" rel="noopener noreferrer">DAMAP v4.6.0</a></span>
+            <span class="infobox__text"><a href="https://github.com/damap-org/damap-backend/releases/latest" target="_blank" rel="noopener noreferrer">DAMAP v4.6.1</a></span>
         </div>
     </div>
 </div>
