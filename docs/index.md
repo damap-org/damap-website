@@ -12,7 +12,7 @@ title: DAMAP - Simplifying Data Management Plans
     <div class="infobox__item">
         <div class="infobox__title">Next community meeting</div>
         <div class="infobox__data">
-            <span class="infobox__text"><time datetime="2025-07-29T14:30:00+0200">July 29, 14:30</time></span>
+            <span class="infobox__text"><time datetime="2025-08-26T14:30:00+0200">August 26, 14:30</time></span>
             <a href="community-meeting.ics" class="md-button sm">Calendar link</a>
         </div>
     </div>
@@ -80,9 +80,9 @@ The content and structure of DAMAP is based on Science Europe's Core Requirement
 <div class="calendar__block">
 <div class="calendar" markdown>
     <h2>Next community meeting</h2>
-    <time datetime="2025-07-39T14:30:00+0200">
+    <time datetime="2025-08-26T14:30:00+0200">
         <span class="calendar__dow">Tue</span>
-        <span class="calendar__day">Jul 29</span>
+        <span class="calendar__day">Aug 26</span>
         <span class="calendar__time">14:30</span>
     </time>
     <footer>
