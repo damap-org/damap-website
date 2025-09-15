@@ -28,8 +28,7 @@ SUMMARY:DAMAP community call
 RRULE:FREQ=MONTHLY;BYDAY=-1TU
 DTSTART;TZID=Europe/Vienna:20250729T143000
 DTEND;TZID=Europe/Vienna:20250729T151500
-URL:https://tuwien.zoom.us/j/69725075402?pwd=6fG3OwAyg7f2wqe1oyVuPh8HOq7AIr
- .1
+URL:https://damap.org/communitymeeting
 DESCRIPTION:\nHi everyone\,\n\nAs announced in various meetings\, we are ha
  ving a monthly DAMAP community call that serves as an open forum to discuss
   all things related to DAMAP\, (machine-actionable) DMPs in general\, funde
@@ -41,8 +40,7 @@ DESCRIPTION:\nHi everyone\,\n\nAs announced in various meetings\, we are ha
  . feature requests or bug reports in the form of GitHub issues\, improved u
  ser and developer documentation from your feedback\, etc.\n\nThis call is e
  ntirely optional - feel free to ignore it or just participate occasionally.
- \n\nhttps://tuwien.zoom.us/j/69725075402?pwd=6fG3OwAyg7f2wqe1oyVuPh8HOq7AIr
- .1\nMeeting-ID: 697 2507 5402\nPassword: DAMAP-0rg\n\n\nIf you would like t
+ \n\nhttps://damap.org/communitymeeting\nMeeting-ID: 631 5423 7974\nPassword: DAMAP-0rg\n\n\nIf you would like t
  o keep a closer eye on the development\, you can also check out our GitHub 
  org: https://github.com/damap-org
 SEQUENCE:1
