@@ -5,21 +5,25 @@ TZID:Europe/Vienna
 LAST-MODIFIED:20240422T053450Z
 TZURL:https://www.tzurl.org/zoneinfo-outlook/Europe/Vienna
 X-LIC-LOCATION:Europe/Vienna
+
 BEGIN:DAYLIGHT
 TZNAME:CEST
 TZOFFSETFROM:+0100
 TZOFFSETTO:+0200
 DTSTART:19700329T020000
-RRULE:FREQ=MONTHLY;COUNT=12;BYDAY=-1TU
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
 END:DAYLIGHT
+
 BEGIN:STANDARD
 TZNAME:CET
 TZOFFSETFROM:+0200
 TZOFFSETTO:+0100
 DTSTART:19701025T030000
-RRULE:FREQ=MONTHLY;COUNT=12;BYDAY=-1TU
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
+
 END:VTIMEZONE
+
 BEGIN:VEVENT
 LAST-MODIFIED:20250624T205415Z
 DTSTAMP:20250624T205415Z
@@ -41,7 +45,7 @@ DESCRIPTION:\nHi everyone\,\n\nAs announced in various meetings\, we are ha
  ser and developer documentation from your feedback\, etc.\n\nThis call is e
  ntirely optional - feel free to ignore it or just participate occasionally.
  \n\nhttps://damap.org/communitymeeting\nMeeting-ID: 631 5423 7974\nPassword: DAMAP-0rg\n\n\nIf you would like t
- o keep a closer eye on the development\, you can also check out our GitHub 
+ o keep a closer eye on the development\, you can also check out our GitHub
  org: https://github.com/damap-org
 SEQUENCE:1
 X-MOZ-GENERATION:1
@@ -51,4 +55,5 @@ TRIGGER:-PT5M
 DESCRIPTION:DAMAP community call
 END:VALARM
 END:VEVENT
+
 END:VCALENDAR
