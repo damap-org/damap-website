@@ -29,6 +29,8 @@ theme:
     annotation: material/arrow-right-circle
 extra_css:
 - "custom.css"
+extra_javascript:
+  - next-community-meeting.js
 extra:
   generator: false
   footer_links:
