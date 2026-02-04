@@ -72,28 +72,67 @@ These claims are used to populate the local User Registry during the Just-In-Tim
 
 ---
 
-## 4. Example Configuration
+## 4. User Synchronization & Persistence Architecture
 
-Below is a standard configuration for a **Keycloak** deployment.
+DAMAP v5.0 introduces a **Hybrid Identity Model**. While authentication remains stateless (relying on OIDC JWTs), user **identity** is now persistent. This architectural shift is a direct response to the adoption of privacy-preserving IDP standards (Pairwise IDs).
 
-```yaml
-damap:
-  auth:
-    # Connection
-    server-url: http://keycloak:8080/realms/damap
-    issuer: [https://damap.my-university.edu/auth/realms/damap](https://damap.my-university.edu/auth/realms/damap)
-    clientID: damap-backend
-    scope: openid profile email affiliation
+### 4.1 The Constraint: Pairwise IDs
 
-    # Identity Mapping
-    user-id-claim: sub
-    name-claim: name
-    email-claim: email
-    given-name-claim: given_name
-    family-name-claim: family_name
+In previous versions, DAMAP relied on public University IDs (e.g., Employee IDs) to link users. However, modern OIDC configurations increasingly utilize **Pairwise Pseudonymous Identifiers (PPI)**.
 
-    # Roles
-    user-roles-claim-path: realm_access/roles
-    admin-role-name: damap-super-admin
-    affiliations-claim: eduPersonScopedAffiliation
-```
+- **The Challenge:** The IDP provides an opaques string as the User ID (`sub`). This ID has no correlation with public directories or external Person APIs (like TISS or CRIS).
+- **The Consequence:** We can no longer query an external API (e.g., "Find user by Employee ID") and automatically derive their OIDC Login ID. The two datasets are cryptographically unlinkable by design.
+
+### 4.2 Solution: Just-In-Time (JIT) Provisioning
+
+To bridge this gap, DAMAP implements a "Trust on First Use" strategy. The `DamapSecurityAugmentor` acts as the synchronization gateway:
+
+### 4.2 Solution: Just-In-Time (JIT) Provisioning
+
+To bridge this gap, DAMAP implements a "Trust on First Use" strategy. The `DamapSecurityAugmentor` acts as the synchronization gateway:
+
+1. **Request Interception:**  
+   The Augmentor intercepts every HTTP request carrying a valid Bearer Token.
+
+2. **Idempotent Synchronization**
+   : **Lookup:** The internal `damap_user` table is queried using the opaque Pairwise ID (`sub`).
+   : **Provision (Insert):** If the ID is absent, a new user record is atomically created using the token attributes.
+   : **Reconciliation (Update):** Existing records are updated to match the current token.
+
+3. **Result:**  
+   The `damap_user` table effectively becomes a local "Phonebook" of all pairwise identities that have ever accessed the system.
+
+### 4.3 Caching Strategy
+
+To reconcile the JIT requirement with high-performance standards, DAMAP implements a **Write-Through / Cache-Aside** hybrid layer using Caffeine.
+
+- **Cache Name:** `user-sync-cache`
+- **Behavior:** Once a user is synchronized, their ID is cached for **10 minutes**. Subsequent API calls bypass the database write, eliminating write amplification during high-traffic sessions.
+- **Security:** This cache affects _metadata updates_ only. Access revocation remains instantaneous because authorization relies on the JWT signature, not the cache.
+
+---
+
+## 5. Access Control Architecture
+
+The decoupling of **Metadata** (Contributors) from **Identity** (Access) is a foundational change in v5.0, driven by the Pairwise ID constraints described above.
+
+### 5.1 Decoupling Access from Contributors
+
+- **Contributor (Metadata):** A text record representing a person involved in a project (e.g., "Project Leader"). These are often fetched from external systems (CRIS/ORCID).
+- **Access (Identity):** A cryptographic link to a `damap_user` entity, granting permission to view or edit the DMP.
+
+**Architectural Rationale:**
+Because the IDP provides opaque Pairwise IDs, we cannot infer a user's login identity from their Contributor metadata.
+
+- _Example:_ Identifying "Dr. Smith" in a CRIS system yields an Employee ID. It does **not** yield the opaque Pairwise ID required to grant them login access.
+
+Therefore, listing a person as a "Contributor" in the DMP **no longer implies** technical access rights. These concepts are now strictly separated to prevent security ambiguities.
+
+### 5.2 The "Invite" Workflow (User Search)
+
+To grant access, a user must be explicitly invited via the Access Management API.
+
+- **Search Scope:** The endpoint `GET /api/access/user-search` queries the local `damap_user` registry.
+- **Implication:** A user is only "discoverable" for invitation after they have logged into DAMAP at least once. This confirms that their Pairwise ID is known to the system and can be reliably linked to a DMP.
+
+---
