@@ -2,17 +2,17 @@
 title: Authentication Setup
 ---
 
-# DAMAP v5.0 Authentication Setup
+# DAMAP v5.0.0 Authentication Setup
 
 To allow users to log into DAMAP, the application needs to understand how your institution's login system (Identity Provider) sends user information.
 
-In DAMAP v5.0, you must explicitly tell the system which "claims" (fields of data) in the login token correspond to a user's name, email, and ID. All of these settings are defined in your `application.yml` file.
+In DAMAP v5.0.0, you must explicitly tell the system which "claims" (fields of data) in the login token correspond to a user's name, email, and ID. All of these settings are defined in your `application.yml` file.
 
 ## Authentication Configuration
 
 The following table breaks down the required authentication properties. You will need to adjust the values based on how your specific OpenID Connect (OIDC) server is configured.
 
-| Attribute                          | Default Value                                                         | What it means                                                                                                                    |
+| Attribute                          | Example Value                                                         | What it means                                                                                                                    |
 | :--------------------------------- | :-------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
 | `quarkus.oidc.auth-server-url`     | `http://keycloak:8080/realms/damap`                                   | The web address of your login server. DAMAP uses this to verify that a user's login is genuine.                                  |
 | `quarkus.oidc.token.issuer`        | `http://localhost:8087/realms/damap`                                  | The address the frontend uses to send users to the login page, and the trusted source that issues the login tokens.              |

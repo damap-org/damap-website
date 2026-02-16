@@ -1,8 +1,8 @@
 ---
-title: Upgrading to v5.0
+title: Upgrading to v5.0.0
 ---
 
-# Migration Guide: Upgrading to DAMAP v5.0
+# Migration Guide: Upgrading to DAMAP v5.0.0
 
 DAMAP v5.0 changes how the system handles user logins and project permissions. This guide explains how to update your configuration files and how the new permission system affects your users.
 
