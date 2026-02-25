@@ -8,6 +8,8 @@ DAMAP uses [Islandora FITS](https://github.com/Islandora/islandora_fits) to auto
 
 We currently recommend deploying FITS using the `islandora/fits:main` container image. This exposes the FITS service on port 8080, which the DAMAP backend uses.
 
+To configure the URL where DAMAP expects the FITS service to be exposed internally, use the `REST_FITS_MP_REST_URL` environment variable. By default, it's set to `http://fits-service:8080/fits`.
+
 !!! warning
     The FITS service should never be exposed to the Internet!
 

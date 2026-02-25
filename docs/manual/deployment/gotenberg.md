@@ -10,6 +10,8 @@ Please note that Gotenberg is only available as a container image, not for stand
 
 We currently recommend deploying the Gotenberg service from the `gotenberg/gotenberg:8` container image, which will expose the service on port 3000. The DAMAP backend accesses this service directly.
 
+To configure the URL where DAMAP expects the Gotenberg service to be exposed internally, use the `REST_GOTENBERG_MP_REST_URL` environment variable. By default, it's set to `http://gotenberg:3000`.
+
 !!! warning
     The Gotenberg service should never be exposed to the Internet!
 
