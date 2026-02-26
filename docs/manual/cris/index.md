@@ -6,12 +6,9 @@ title: CRIS system integration
 
 This section details the configuration options you can pass when [deploying the backend](../deployment/backend.md). As described [in the configuration overview](../configuration/index.md), we provide both the environment variable for stock deployment and the `application.yaml` variant for recompilation.
 
-!!! warning
-    The settings described on this page are not yet available in a DAMAP release. See [this pull request](https://github.com/damap-org/damap-backend/pull/392).
-
 DAMAP has the following built-in CRIS integrations:
 
-- [Elsevier Pure](pure.md) *(pending release)*
+- [Elsevier Pure](pure.md)
 - [ORCID](orcid.md)
 
 You can also [develop your own integration](custom.md).
