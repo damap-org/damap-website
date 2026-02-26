@@ -23,3 +23,9 @@ This section details the configuration options you can pass when [deploying the 
 |-----------------------|--------------------------------|
 | `REST_GOTENBERG_MP_REST_URL` | URL to your Gotenberg service. |
 
+### Fields
+
+| Environment variable  | Description                                                                                                                                   |
+|-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| `DAMAP_FIELDS_ETHICAL_REPORT_ENABLED` | If `true`, enables input field for short ethical report description. Set to `false` if you want to deactivate the feature, `true` by default. |
+
