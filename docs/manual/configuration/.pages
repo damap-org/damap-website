@@ -4,4 +4,3 @@ nav:
 - General options: general.md
 - Authentication: authentication.md
 - Database: database.md
-- Migration: migration.md
