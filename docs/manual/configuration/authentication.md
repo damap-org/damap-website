@@ -1,18 +1,32 @@
 ---
 title: Configuring authentication
 hide:
-    - toc
+  - toc
 ---
 
-# Configuring authentication
+# DAMAP Authentication Setup
 
-This section details the configuration options you can pass when [deploying the backend](../deployment/backend.md). As described [in the overview](index.md), we provide both the environment variable for stock deployment and the `application.yaml` variant for recompilation.
+This section details the configuration options you can pass when [deploying the backend](../deployment/backend.md). As described [in the overview](index.md), we provide configuration through the environment variable for deployment.
 
-| Environment variable         | application.yaml             | Description                                                                                                                                                                                                                                |
-|------------------------------|------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `DAMAP_AUTH_BACKEND_URL`     | `damap.auth.backend.url`     | The URL the backend can reach the OIDC server on. The URL must be the full path to the realm and the path `.well-known/openid-configuration` must exist under this URL.                                                                    |
-| `DAMAP_AUTH_FRONTEND_URL`    | `damap.auth.frontend.url`    | The URL the user can reach the OIDC server under. This must be a `https://` URL unless the hostname is `localhost`.  The URL must be the full path to the realm and the path `.well-known/openid-configuration` must exist under this URL. | 
-| `DAMAP_AUTH_BACKEND_CLIENT`  | `damap.auth.backend.client`  | The client ID configured in the OIDC server for the backend to use. This client ID must be configured to support the authorization code flow with PKCE.                                                                                    |
-| `DAMAP_AUTH_FRONTEND_CLIENT` | `damap.auth.frontend.client` | The client ID configured in the OIDC server for the frontend to use. This client ID must be configured to support the authorization code flow with PKCE.                                                                                   |
-| `DAMAP_AUTH_SCOPE`           | `damap.auth.scope`           | The scopes to request from the OIDC server, separated by space.                                                                                                                                                                            |
-| `DAMAP_AUTH_USER`            | `damap.auth.user`            | The OIDC claim to use as a user ID. Defaults to `personID`.                                                                                                                                                                                |
+To allow users to log into DAMAP, the application needs to understand how your institution's login system (Identity Provider) sends user information.
+
+In DAMAP, you must explicitly tell the system which "claims" (fields of data) in the login token correspond to a user's name, email, and ID. All of these settings are defined in your environment variables.
+
+## Authentication Configuration
+
+The following table breaks down the required authentication properties. You will need to adjust the values based on how your specific OpenID Connect (OIDC) server is configured.
+
+| Attribute                          | Example Value                                                         | What it means                                                                                                                                                                                                         |
+| :--------------------------------- | :-------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `QUARKUS_OIDC_AUTH_SERVER_URL`     | `http://keycloak:8080/realms/damap`                                   | The web address of your login server. DAMAP uses this to verify that a user's login is genuine. The URL must be the full path to the realm and the path `.well-known/openid-configuration` must exist under this URL. |
+| `QUARKUS_OIDC_TOKEN_ISSUER`        | `http://localhost:8087/realms/damap`                                  | The address the frontend uses to send users to the login page, and the trusted source that issues the login tokens.                                                                                                   |
+| `QUARKUS_OIDC_CLIENT_ID`           | `damap`                                                               | The specific name or ID your login server uses to recognize the DAMAP application.                                                                                                                                    |
+| `DAMAP_AUTH_SCOPES`                | `openid profile email offline_access microprofile-jwt roles personID` | A list of permissions DAMAP asks for during login so it can read the user's basic profile information.                                                                                                                |
+| `DAMAP_AUTH_USER_ID_CLAIM`         | `personID`                                                            | The exact field name your login server uses to send a user's unique, permanent ID number.                                                                                                                             |
+| `DAMAP_AUTH_EMAIL_CLAIM`           | `email`                                                               | The field name containing the user's email address.                                                                                                                                                                   |
+| `DAMAP_AUTH_NAME_CLAIM`            | `name`                                                                | The field name containing the user's full display name.                                                                                                                                                               |
+| `DAMAP_AUTH_GIVEN_NAME_CLAIM`      | `given_name`                                                          | The field name containing the user's first name.                                                                                                                                                                      |
+| `DAMAP_AUTH_FAMILY_NAME_CLAIM`     | `family_name`                                                         | The field name containing the user's last name.                                                                                                                                                                       |
+| `DAMAP_AUTH_AFFILIATIONS_CLAIM`    | `affiliation`                                                         | The field name containing the user's institutional affiliation (e.g., whether they are a researcher or student at University A).                                                                                      |
+| `DAMAP_AUTH_USER_ROLES_CLAIM_PATH` | `realm_access/roles`                                                  | The location in the login data where DAMAP can find the user's system roles (like admin rights).                                                                                                                      |
+| `DAMAP_AUTH_ADMIN_ROLE_NAME`       | `Damap Admin`                                                         | The exact name of the role that gives a user full administrator privileges over the DAMAP instance.                                                                                                                   |
