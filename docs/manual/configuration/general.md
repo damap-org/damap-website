@@ -19,8 +19,7 @@ This section details the configuration options you can pass when [deploying the 
 
 ### REST
 
-| Environment variable  | Description                                                                                                                                                   |
-|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `REST_FITS_MP_REST_URL` | URL to your Gotenberg service.                                                                                                                                |
-| `REST_GOTENBERG_MP_REST_URL` | URL to your FITS service.                                                                                                                                     |
+| Environment variable  | Description                    |
+|-----------------------|--------------------------------|
+| `REST_GOTENBERG_MP_REST_URL` | URL to your Gotenberg service. |
 
