@@ -12,4 +12,3 @@ The following configuration sections are available:
 - [General](general.md)
 - [Authentication](authentication.md)
 - [Database](database.md)
-- [Migration](migration.md)
