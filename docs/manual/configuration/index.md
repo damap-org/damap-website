@@ -1,6 +1,6 @@
 ---
 hide:
-    - toc
+  - toc
 ---
 
 # DAMAP configuration overview
