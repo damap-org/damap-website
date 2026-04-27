@@ -1,3 +1,5 @@
 title: Migration
 nav:
 - Overview: index.md
+- Authentication: authentication.md
+- Access: access.md
