@@ -40,7 +40,7 @@ Let's customize the page for TU Wien. The primary color of TU Wien is `#006699`,
 
 ![TU Wien Theme](../colors-media/tuwien1.png)
 
-At this point, you might notice that the colors throughout the application do not 100% match the Primary Color you have used. This is because the [Material Design System](https://m3.material.io/styles/color/system/how-the-system-works) does not allow any color to be used as the primary color. If you need 100% compliance, check the **Exact Colors** checkbox:
+At this point, you might notice that the colors throughout the application do not 100% match the Primary Color you have used as input. This is because the [Material Design System](https://m3.material.io/styles/color/system/how-the-system-works) Algorithm does not allow any color to be used as the primary color. If you need 100% compliance, check the **Exact Colors** checkbox:
 
 ![Exact Colors Checkbox](../colors-media/checkbox.png)
 
