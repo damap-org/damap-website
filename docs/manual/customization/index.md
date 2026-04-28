@@ -6,6 +6,7 @@ You can customize the appearance of the DAMAP installation in several ways.
 
 - [Logos](logos.md)
 - [Colors](colors.md)
+- [Images](images.md)
 - [Texts](texts.md)
 
 ## Recompiling the frontend
