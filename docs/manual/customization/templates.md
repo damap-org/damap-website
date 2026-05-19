@@ -1,19 +1,27 @@
-***
-
 # Customizing templates
 
 ## 1. Overview and Usage
-DAMAP allows you to upload custom Microsoft Word (`.docx`) templates for exporting DMPs. This feature is located in the **Admin Panel** under **Templates**.
 
-All custom templates act as variations of the standard **Science Europe** template. In particular, this means they rely on the same placeholders (keys).
+DAMAP exports DMPs to Microsoft Word (`.docx`) templates by replacing placeholders in a Word file with information the
+user put in.
+Placeholders look like text surrounded by square brackets, an example would be `[contact` or `[costs]`.
+
+Admins can upload custom Word templates for exporting DMPs, by writing their own templates, using preexisting placeholders.
+This feature is located in the **Admin Panel** under **Templates**.
+
+All custom templates act as variations of the standard [Science Europe Template](https://github.com/damap-org/damap-backend/blob/next/src/main/resources/org/damap/base/template/scienceEuropeTemplate.docx).
+In particular, this means they rely on the same placeholders (keys).
+You can download it by following the link and clicking the 3 dots on the top right.
 
 Custom templates that have previously been uploaded can also be deleted via the UI.
+In addition to this, templates can be toggled active or inactive for all users of your DAMAP instance.
+Setting a template to inactive disables exporting and previewing using that template.
+At least one template needs to be active at all times, which is enforced automatically.
 
-In addition to this, templates can be toggled active or inactive for all users of your DAMAP instance. Setting a template to inactive disables exporting and previewing using that template. At least one template needs to be active at all times, which is enforced automatically.
 ### How to Create a Custom Template
 A custom template can be created using one of these two methods:
 
-1. **Use the Science Europe base:** Download the default Science Europe template and make your changes directly within that file. This is the recommended method.
+1. **Use the Science Europe base:** Download the default [Science Europe Template](https://github.com/damap-org/damap-backend/blob/next/src/main/resources/org/damap/base/template/scienceEuropeTemplate.docx) and make your changes directly within that file. This is the recommended method.
 2. **Start fresh (Alternative):** Create a blank Word document, write your custom text, and carefully copy-paste the required placeholders and tables from the standard Science Europe template into your new document.
 
 ### Rules for Editing Templates
@@ -50,12 +58,12 @@ You can place these placeholders anywhere in your document to display the corres
 | `[projectid]` | The internal university or institutional project ID.                 |
 
 ### People & Roles
-| Placeholder | Explanation |
-| :--- | :--- |
-| `[contact]` | Full contact details for the person responsible for the DMP (Name, Email, ORCID, and Affiliation). |
-| `[coordinator]` | Full details of the Project Coordinator or Principal Investigator. |
-| `[contributors]` | A list of other project members involved in data management, including their roles. |
-| `[storageintro]` | A generated narrative stating who (by name or role) is responsible for data storage and whether it is managed internally or externally. |
+| Placeholder        | Explanation |
+|:-------------------| :--- |
+| `[contact]`        | Full contact details for the person responsible for the DMP (Name, Email, ORCID, and Affiliation). |
+| `[coordinator]`    | Full details of the Project Coordinator or Principal Investigator. |
+| `[contributors]`   | A list of other project members involved in data management, including their roles. |
+| `[storageintro]`   | A generated narrative stating who (by name or role) is responsible for data storage and whether it is managed internally or externally. |
 
 ### Data Description & Quality
 | Placeholder | Explanation |

@@ -4,7 +4,6 @@ You can customize the appearance of the DAMAP installation in several ways.
 
 ## Available customizations
 
-- [Logos](logos.md)
 - [Colors](colors.md)
 - [Images](images.md)
 - [Texts](texts.md)
