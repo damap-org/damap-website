@@ -10,3 +10,4 @@ The following migration sections are available:
 
 - [Authentication](authentication.md)
 - [Access](access.md)
+- [Configuration Variables](configuration-variables.md)

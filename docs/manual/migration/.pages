@@ -3,3 +3,4 @@ nav:
 - Overview: index.md
 - Authentication: authentication.md
 - Access: access.md
+- Configuration variables: configuration-variables.md
