@@ -17,9 +17,9 @@ At the very least, you will need to provide the following environment variables 
 - `QUARKUS_DATASOURCE_DB_KIND` as your database engine name (e.g. `postgresql`).
 - `QUARKUS_HIBERNATE_ORM_DIALECT` containing the Hibernate dialect (e.g. `org.hibernate.dialect.PostgreSQLDialect`).
 - `QUARKUS_DATASOURCE_USERNAME` and `QUARKUS_DATASOURCE_PASSWORD` with your database credentials
-- `DAMAP_ORIGINS` containing the valid origin URLs for your frontend.
+- `QUARKUS_HTTP_CORS_ORIGINS` containing the valid origin URLs for your frontend.
 - `QUARKUS_OIDC_AUTH_SERVER_URL` containing the OIDC server URL the backend should use.
-- `QUARKUS_OIDC_TOKEN_ISSUERL` containing the user-accessible OIDC URL.
+- `QUARKUS_OIDC_TOKEN_ISSUER` containing the user-accessible OIDC URL.
 - `QUARKUS_OIDC_CLIENT_ID` client ID as configured in the OIDC server.
 - `DAMAP_AUTH_SCOPE` scopes to request from the OIDC server.
 - `DAMAP_AUTH_USER_ROLES_CLAIM_PATH` claim path in the token that will hold the user roles
@@ -28,7 +28,8 @@ At the very least, you will need to provide the following environment variables 
 - `DAMAP_AUTH_GIVEN_NAME_CLAIM` OIDC claim that holds the users given name
 - `DAMAP_AUTH_FAMILY_NAME_CLAIM` OIDC claim that holds the users family name
 - `DAMAP_AUTH_EMAIL_CLAIM` OIDC claim that holds the users mail
-
+- `DAMAP_AUTH_AFFILIATIONS_CLAIM` The OIDC claim that holds the users affiliations (only for multitenant setup)
+- `DAMAP_AUTH_ADMIN_ROLE_NAME` The OIDC claim that holds the users privileges
 
 You can find a reference of all available configuration options in the [Configuration](../configuration/index.md) and [CRIS System Integration](../cris/index.md) sections.
 
