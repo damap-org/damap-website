@@ -6,7 +6,7 @@ hide:
 
 # General options
 
-This section details the configuration options you can pass when [deploying the backend](../deployment/backend.md). As described [in the overview](index.md), we provide both the environment variable for stock deployment and the `application.yaml` variant for recompilation.
+This section details the general configuration options you can pass when [deploying the backend](../deployment/backend.md).
 
 ### General configurations
 

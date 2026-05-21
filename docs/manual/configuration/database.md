@@ -6,16 +6,16 @@ hide:
 
 # Database configuration
 
-This section details the configuration options you can pass when [deploying the backend](../deployment/backend.md). As described [in the overview](index.md), we provide both the environment variable for stock deployment and the `application.yaml` variant for recompilation.
+This section details the configuration options you can pass when [deploying the backend](../deployment/backend.md).
 
-| Environment variable           | Description                                                                                |
-|--------------------------------|--------------------------------------------------------------------------------------------|
-| `QUARKUS_DATASOURCE_JDBC_URL`  | The JDBC connect string in the format of `jdbc:postgresql://SERVERNAME:5432/DATABASENAME`. |
+| Environment variable               | Description                                                                                |
+|------------------------------------|--------------------------------------------------------------------------------------------|
+| `QUARKUS_DATASOURCE_JDBC_URL`      | The JDBC connect string in the format of `jdbc:postgresql://SERVERNAME:5432/DATABASENAME`. |
 | `QUARKUS_DATASOURCE_DB_KIND`       | Your database engine kind (`postgresql` or `oracle`).                                      |
-| `QUARKUS_DATASOURCE_USERNAME`    | Username for database authentication.                                                      |
-| `QUARKUS_DATASOURCE_PASSWORD`    | Password for database authentication.                                                      |
-| `QUARKUS_HIBERNATE_ORM_DIALECT` | Dialect for the Hibernate ORM. Defaults to `org.hibernate.dialect.PostgreSQLDialect`.      |
-| `QUARKUS_DATASOURCE_JDBC_DRIVER`      | Driver for your database. Defaults to `org.postgresql.Driver`.                             |
+| `QUARKUS_DATASOURCE_USERNAME`      | Username for database authentication.                                                      |
+| `QUARKUS_DATASOURCE_PASSWORD`      | Password for database authentication.                                                      |
+| `QUARKUS_HIBERNATE_ORM_DIALECT`    | Dialect for the Hibernate ORM. Defaults to `org.hibernate.dialect.PostgreSQLDialect`.      |
+| `QUARKUS_DATASOURCE_JDBC_DRIVER`   | Driver for your database. Defaults to `org.postgresql.Driver`.                             |
 
 !!! warning
     We officially only support PostgreSQL as a database engine. Oracle is supported only on a best effort basis.

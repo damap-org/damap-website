@@ -6,7 +6,7 @@ title: Deploying the DAMAP backend
 
 The DAMAP backend is a Java application written for Quarkus. We currently only support containerized deployments and recommend using the `ghcr.io/damap-org/damap-backend:next` image unless you have created a custom CRIS integration that needs recompilation.
 
-You can pass all configuration options to the DAMAP backend using environment variables. Please see the [Configuration](../configuration/index.md) and [CRIS System Integration](../cris/index.md) sections for details on available configuration options.
+You can pass all configuration options to the DAMAP backend using environment variables. Please see the [Configuration](../configuration/index.md) and [CRIS System Integration](../cris/index.md) sections for details on available configuration options. DAMAP also offers a ready-made [example.env](https://github.com/damap-org/damap-backend/blob/next/example.env) file with all available environment variables you can use to configure your application in a dockerized setup.
 
 ## Minimum configuration
 

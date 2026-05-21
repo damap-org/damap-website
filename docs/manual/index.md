@@ -20,22 +20,21 @@ In order to successfully deploy DAMAP, you will need:
 - An OIDC server with PKCE support for authentication
 
 !!! tip
-    We offer [an experimental Helm chart](https://github.com/damap-org/damap-backend/pull/393) for Kubernetes deployments.
+    We offer [a Helm chart](https://artifacthub.io/packages/helm/damap/damap-chart) for Kubernetes deployments.
 
 !!! note
-    While you may have some success deploying DAMAP without a container environment (e.g. bare metal or on a VM), several services DAMAP needs (FITS, Gotenberg, etc.) do not support non-containerized environments. We strongly recommend deploying DAMAP in a container environment such as Docker or Kubernetes.
+    While you may have some success deploying DAMAP without a container environment (e.g. bare metal or on a VM), several services DAMAP needs (Gotenberg, etc.) do not support non-containerized environments. We strongly recommend deploying DAMAP in a container environment such as Docker or Kubernetes.
 
 ## Planning your deployment
 
 In broad strokes, the DAMAP deployment can be broken down into the following steps:
 
-1. Creating an OIDC client ID for DAMAP
+1. Creating an OIDC client ID for DAMAP and prepare an OIDC server like described under the [Deployment](deployment/oidc.md) section
 2. Creating a database for DAMAP in your PostgreSQL server
-3. Starting the Gotenberg service
-4. Starting the FITS service (optional)
-5. Configuring and starting the DAMAP backend
-6. Deploying the DAMAP frontend on static webserver
-7. Creating a reverse proxy/load balancer in front of the DAMAP deployment (optional)
+3. Starting the Gotenberg service (optional)
+4. Configuring and starting the DAMAP backend
+5. Deploying the DAMAP frontend on static webserver
+6. Creating a reverse proxy/load balancer in front of the DAMAP deployment (optional)
 
 [Read the documentation  :material-arrow-right-circle:{ .middle }](deployment/index.md)
 
