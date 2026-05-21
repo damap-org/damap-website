@@ -11,10 +11,10 @@ This section details the configuration options you can pass when [deploying the 
 | Environment variable           | Description                                                                                |
 |--------------------------------|--------------------------------------------------------------------------------------------|
 | `QUARKUS_DATASOURCE_JDBC_URL`  | The JDBC connect string in the format of `jdbc:postgresql://SERVERNAME:5432/DATABASENAME`. |
-| `DAMAP_DATABASE_DB_KIND`       | Your database engine kind (`postgresql` or `oracle`).                                      |
-| `DAMAP_DATASOURCE_USERNAME`    | Username for database authentication.                                                      |
-| `DAMAP_DATASOURCE_PASSWORD`    | Password for database authentication.                                                      |
-| `DAMAP_DATASOURCE_ORM_DIALECT` | Dialect for the Hibernate ORM. Defaults to `org.hibernate.dialect.PostgreSQLDialect`.      |
+| `QUARKUS_DATASOURCE_DB_KIND`       | Your database engine kind (`postgresql` or `oracle`).                                      |
+| `QUARKUS_DATASOURCE_USERNAME`    | Username for database authentication.                                                      |
+| `QUARKUS_DATASOURCE_PASSWORD`    | Password for database authentication.                                                      |
+| `QUARKUS_HIBERNATE_ORM_DIALECT` | Dialect for the Hibernate ORM. Defaults to `org.hibernate.dialect.PostgreSQLDialect`.      |
 | `QUARKUS_DATASOURCE_JDBC_DRIVER`      | Driver for your database. Defaults to `org.postgresql.Driver`.                             |
 
 !!! warning
