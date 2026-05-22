@@ -6,5 +6,7 @@ Administrators can customize both the appearance and the content of a DAMAP inst
 
 - [Colors](colors.md)
 - [Images](images.md)
+- [Recommended Repositories](repositories.md)
+- [Storages](storages.md)
 - [Texts](texts.md)
 - [Templates](templates.md)

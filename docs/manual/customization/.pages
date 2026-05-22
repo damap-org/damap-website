@@ -3,5 +3,7 @@ nav:
 - Overview: index.md
 - Colors: colors.md
 - Images: images.md
+- Repositories: repositories.md
+- Storages: storages.md
 - Texts: texts.md
 - Templates: templates.md
