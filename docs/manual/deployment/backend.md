@@ -33,6 +33,19 @@ At the very least, you will need to provide the following environment variables 
 
 You can find a reference of all available configuration options in the [Configuration](../configuration/index.md) and [CRIS System Integration](../cris/index.md) sections.
 
+## Deploying with multitenancy
+
+DAMAP offers the possibility to be set up as a multitenant capable application - meaning like a house that gets rented
+out to multiple tenants, one instance can serve multiple universities.
+This makes it highly efficient to onboard new universities, as existing infrastructure can simply be reused.
+We advise to only use multitenancy in Kubernetes based deployments, as they offer better scalability and maintainability
+than dockerized or baremetal deplyoments.
+In addition, we also provide a [Helm chart](https://artifacthub.io/packages/helm/damap/damap-chart), which makes deployment
+of DAMAP as a multitenant capable application easier by automating certain aspects.
+
+To activate multitenant mode, set the `QUARKUS_PROFILE` environment variable to `multitenant,prod`.
+For all other steps needed to configure multitenancy, refer to the [documentation](../../configuration/multitenancy).
+
 ## Deploying with a read-only filesystem
 
 DAMAP uses [Quarkus re-augmentation](https://quarkus.io/guides/reaugmentation) to switch database engines, which requires write permissions to the underlying filesystem. If you would like to deploy using a read-only filesystem, or with a user ID without permissions to write the filesystem (e.g. in OpenShift), you need to perform the following steps:
