@@ -8,7 +8,7 @@ hide:
 
 To activate multitenancy mode, three things are needed
 
-1. Set the `QUARKUS_PROFILE` environment variable to `multitenant,prod`
+1. Set the `DAMAP_QUARKUS_PROFILE` environment variable to `multitenant,prod`
 2. Prepare an [OIDC server](../authentication.md) that can provide affiliation informatio
 3. Prepare a multitenancy configuration file
 4. Create a database for each tenant

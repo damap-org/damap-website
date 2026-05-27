@@ -10,17 +10,20 @@ You can pass all configuration options to the DAMAP backend using environment va
 
 ## Minimum configuration
 
-At the very least, you will need to provide the following environment variables for DAMAP to work:
+At the very least, you will need to provide the following environment variables for containerized DAMAP to work:
 
-- `QUARKUS_DATASOURCE_JDBC_URL` in the format of `jdbc:postgresql://SERVERNAME:5432/DATABASENAME`.
-- `QUARKUS_DATASOURCE_JDBC_DRIVER` containing the driver of your database (e.g. org.postgresql.Driver)
-- `QUARKUS_DATASOURCE_DB_KIND` as your database engine name (e.g. `postgresql`).
-- `QUARKUS_HIBERNATE_ORM_DIALECT` containing the Hibernate dialect (e.g. `org.hibernate.dialect.PostgreSQLDialect`).
-- `QUARKUS_DATASOURCE_USERNAME` and `QUARKUS_DATASOURCE_PASSWORD` with your database credentials
-- `QUARKUS_HTTP_CORS_ORIGINS` containing the valid origin URLs for your frontend.
-- `QUARKUS_OIDC_AUTH_SERVER_URL` containing the OIDC server URL the backend should use.
-- `QUARKUS_OIDC_TOKEN_ISSUER` containing the user-accessible OIDC URL.
-- `QUARKUS_OIDC_CLIENT_ID` client ID as configured in the OIDC server.
+- `DAMAP_DB_HOST` like `SERVERNAME`.
+- `DAMAP_DB_KIND` as your database engine name (e.g. `postgresql`).
+- `DAMAP_DB_NAME` like `damap`.
+- `DAMAP_DB_PORT` like `5432`.
+- `DAMAP_DB_KIND` type of the database, allowed values `postgresql` and `oracle`.
+- `DAMAP_DB_USERNAME` and `DAMAP_DB_PASSWORD` with your database credentials
+- `DAMAP_DB_DATA_HOST_PATH` path on the machine where database data should be stored, like `./data`
+- `DAMAP_HOSTNAME` like your.domain.com, no trailing slash or protocol (http/https) - can be ignored when external OIDC server is used
+- `DAMAP_QUARKUS_HTTP_CORS_ORIGINS` containing the valid origin URLs for your frontend.
+- `DAMAP_QUARKUS_OIDC_AUTH_SERVER_URL` containing the OIDC server URL the backend should use.
+- `DAMAP_QUARKUS_OIDC_TOKEN_ISSUER` containing the user-accessible OIDC URL.
+- `DAMAP_QUARKUS_OIDC_CLIENT_ID` client ID as configured in the OIDC server.
 - `DAMAP_AUTH_SCOPE` scopes to request from the OIDC server.
 - `DAMAP_AUTH_USER_ROLES_CLAIM_PATH` claim path in the token that will hold the user roles
 - `DAMAP_AUTH_USER_ID_CLAIM` OIDC claim to use as a user ID
@@ -33,6 +36,8 @@ At the very least, you will need to provide the following environment variables 
 
 You can find a reference of all available configuration options in the [Configuration](../configuration/index.md) and [CRIS System Integration](../cris/index.md) sections.
 
+For kubernetes based deployments, please view our [Helm chart](https://artifacthub.io/packages/helm/damap/damap-chart).
+
 ## Deploying with multitenancy
 
 DAMAP offers the possibility to be set up as a multitenant capable application - meaning like a house that gets rented
@@ -43,8 +48,8 @@ than dockerized or baremetal deplyoments.
 In addition, we also provide a [Helm chart](https://artifacthub.io/packages/helm/damap/damap-chart), which makes deployment
 of DAMAP as a multitenant capable application easier by automating certain aspects.
 
-To activate multitenant mode, set the `QUARKUS_PROFILE` environment variable to `multitenant,prod`.
-For all other steps needed to configure multitenancy, refer to the [documentation](../../configuration/multitenancy).
+To activate multitenant mode, set the `DAMAP_QUARKUS_PROFILE` environment variable to `multitenant,prod`.
+For all other steps needed to configure multitenancy, refer to the [multitenancy documentation](../../configuration/multitenancy).
 
 ## Deploying with a read-only filesystem
 
