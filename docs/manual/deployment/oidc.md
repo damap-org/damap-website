@@ -17,3 +17,19 @@ In order to use DAMAP, you will need to create a **client ID** in your OIDC conf
 Also make sure to configure the correct **redirect URL** to the URL where your frontend will live. Additionally, set the **CORS headers** to match your frontend URL.
 
 Please make a note of the client ID as you will need it when [configuring the backend](../configuration/authentication.md). Additionally, note down the URL at which your users will be able to access your OIDC server, as well as the URL which the backend will use to reach the server if it differs from the user-facing URL.
+
+The configured OIDC server must provide the following claims for DAMAP to function properly:
+
+| Claim          | Description                                                                                             |
+|----------------|---------------------------------------------------------------------------------------------------------|
+| Name           | Full name of the user.                                                                                  |
+| Given Name     | Given name of the user.                                                                                 |
+| Family Name    | Family name of the user.                                                                                |
+| Email          | Email of the user.                                                                                      |
+| Unique User ID | Unique user ID.                                                                                         |
+| Roles          | Roles of the user. Currently used to create admins in the tool.                                         |
+| Affiliation    | List of unique user affiliations (universities the user belongs to). Only needed in multitenant setups. |
+
+!!! tip
+    Claim names can be configured, for more Information refer to the [Documentation](../configuration/authentication.md)
+

@@ -4,6 +4,5 @@ nav:
 - OIDC: oidc.md
 - Database: database.md
 - Gotenberg: gotenberg.md
-- FITS: fits.md
 - Backend: backend.md
 - Frontend: frontend.md

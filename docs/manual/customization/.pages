@@ -1,6 +1,10 @@
 title: Customization
 nav:
 - Overview: index.md
-- Logos: logos.md
+- Banner: banner.md
 - Colors: colors.md
+- Images: images.md
+- Repositories: repositories.md
+- Storages: storages.md
 - Texts: texts.md
+- Templates: templates.md
