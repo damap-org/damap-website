@@ -11,10 +11,10 @@
         <link rel="canonical" href="https://damap.org/manual/customization/texts/">
       
       
-        <link rel="prev" href="../colors/">
+        <link rel="prev" href="../storages/">
       
       
-        <link rel="next" href="../../../blog/">
+        <link rel="next" href="../templates/">
       
       
         
@@ -24,7 +24,7 @@
         <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../../feed_rss_updated.xml">
       
       <link rel="icon" href="../../../logo.svg">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
@@ -538,6 +538,8 @@
       
         
       
+        
+      
     
     
     
@@ -606,8 +608,6 @@
       
         
           
-        
-      
         
       
         
@@ -768,34 +768,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deployment/fits/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    FITS
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../deployment/backend/" class="md-nav__link">
         
   
@@ -864,6 +836,8 @@
       
         
           
+        
+      
         
       
         
@@ -1000,6 +974,34 @@
     
   
     Database
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration/multitenancy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multitenancy
   
 
     
@@ -1210,6 +1212,14 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -1274,14 +1284,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../logos/" class="md-nav__link">
+      <a href="../banner/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Logos
+    Banner
   
 
     
@@ -1310,6 +1320,90 @@
     
   
     Colors
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../images/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Images
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../repositories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Repositories
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../storages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Storages
   
 
     
@@ -1390,10 +1484,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#method-1-mounting-the-files" class="md-nav__link">
+  <a href="#page-structure" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Method 1: mounting the files
+        Page structure
       
     </span>
   </a>
@@ -1401,10 +1495,82 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#method-2-recompiling-the-frontend" class="md-nav__link">
+  <a href="#thought-process" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Method 2: recompiling the frontend
+        Thought process
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changing-text" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changing text
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Changing text">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#text-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Text values
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Text keys
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#further-filtering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Further filtering
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-a-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding a language
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#removing-a-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Removing a language
       
     </span>
   </a>
@@ -1415,6 +1581,232 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../templates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Templates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../migration/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Migration to v5.0.0
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6_6" id="__nav_6_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Migration to v5.0.0
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../migration/access/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Access
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../migration/authentication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Authentication
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../migration/configuration-variables/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuration variables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../migration/customizations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Customizations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -1632,10 +2024,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#method-1-mounting-the-files" class="md-nav__link">
+  <a href="#page-structure" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Method 1: mounting the files
+        Page structure
       
     </span>
   </a>
@@ -1643,10 +2035,82 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#method-2-recompiling-the-frontend" class="md-nav__link">
+  <a href="#thought-process" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Method 2: recompiling the frontend
+        Thought process
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changing-text" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changing text
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Changing text">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#text-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Text values
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Text keys
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#further-filtering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Further filtering
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-a-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding a language
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#removing-a-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Removing a language
       
     </span>
   </a>
@@ -1674,11 +2138,48 @@
 
 
 <h1 id="customizing-texts">Customizing texts<a class="headerlink" href="#customizing-texts" title="Permanent link">&para;</a></h1>
-<p>If you would like to change the texts in the frontend, you can do so by preparing <a href="https://github.com/damap-org/damap-frontend/tree/next/apps/damap-frontend/src/assets/i18n">the translation files</a>. You can supply these to the frontend to change the texts.</p>
-<h2 id="method-1-mounting-the-files">Method 1: mounting the files<a class="headerlink" href="#method-1-mounting-the-files" title="Permanent link">&para;</a></h2>
-<p>You can mount the translation files directly in the container. Mount your prepared <code>i18n</code> directory in <code>/usr/lib/nginx/html/assets/i18n</code>.</p>
-<h2 id="method-2-recompiling-the-frontend">Method 2: recompiling the frontend<a class="headerlink" href="#method-2-recompiling-the-frontend" title="Permanent link">&para;</a></h2>
-<p>You can als place the translation files in the <code>apps/damap-frontend/src/assets/i18n</code> folder in the frontend code and recompile the frontend from source.</p>
+<p>DAMAP provides a built-in text customization interface that allows administrators to customize text / translations at runtime through the Admin Page -&gt; Translations Page.</p>
+<h2 id="page-structure">Page structure<a class="headerlink" href="#page-structure" title="Permanent link">&para;</a></h2>
+<p>The page features multiple parts: <strong>Filters</strong>, <strong>Actions</strong>, <strong>Results</strong>, and <strong>Editor</strong>.</p>
+<p><img alt="Page Structure" src="../texts-media/page.png" /></p>
+<h2 id="thought-process">Thought process<a class="headerlink" href="#thought-process" title="Permanent link">&para;</a></h2>
+<p>Every DAMAP deployment comes with the English language out of the box. This means users can select it in the sidebar on the top left. An admin can do one of the following two things:</p>
+<ol>
+<li>Change some text for the English language</li>
+<li>Create an entire new language</li>
+</ol>
+<h2 id="changing-text">Changing text<a class="headerlink" href="#changing-text" title="Permanent link">&para;</a></h2>
+<p>A simple example would be customizing a specific piece of text somewhere in the application, for example the greeting on the top of the page "let's get started". To edit the text, first copy-paste it in the <code>Search by key or text</code> input field in the <strong>Filters</strong> section, as follows:</p>
+<p><img alt="Text Selection and Input" src="../texts-media/text-selection-and-input.png" /></p>
+<p>In the <strong>Results</strong> table, you should see the entry that correspond to the "let's get started" text you searched for. Clicking on this entry opens the <strong>Editor</strong> section on the right:</p>
+<p><img alt="Editor Section" src="../texts-media/editor-open.png" /></p>
+<h3 id="text-values">Text values<a class="headerlink" href="#text-values" title="Permanent link">&para;</a></h3>
+<p>The English language has default values for every piece of text on the website. <strong>Default values cannot be changed and the English language cannot be deleted</strong>. This ensures that pieces of text cannot be lost.</p>
+<p>An admin can set custom values in the <strong>Editor</strong> section, which take precedence over defaults by writing text in the "Custom value for EN" field and clicking the "Save" button. This overrides the original text in the user interface with your custom value:</p>
+<p><img alt="Editor Section Changed Text" src="../texts-media/editor-changed-text.png" />
+<em>Notice that in the greeting, the text "let's get started!" has changed to "let's begin!".</em></p>
+<h3 id="text-keys">Text keys<a class="headerlink" href="#text-keys" title="Permanent link">&para;</a></h3>
+<p>Every piece of text on the website is uniquely identified by a key. In the previous screenshot, the "let's get started!" text has the key <strong>"admin.dashboard.greeting"</strong>. Every key has been chosen such that anyone can quickly understand where that piece of text is located in the application. In this case, it translates to "On the admin page -&gt; in the dashboard -&gt; the greeting".</p>
+<p>These keys simplify sorting, filtering, and searching within the translation system. Since keys are searchable like regular text, searching for a prefix such as "admin.dashboard" will return all texts belonging to that section.</p>
+<p>To view all translations related to a specific area, such as the Admin Page, administrators can use the section dropdown next to the search field to display all text snippets associated with that page, section, or key prefix.</p>
+<p><img alt="Filter By Key" src="../texts-media/filter-by-key.png" /></p>
+<h3 id="further-filtering">Further filtering<a class="headerlink" href="#further-filtering" title="Permanent link">&para;</a></h3>
+<p>The last filter allows admins to show only those snippets of text that have or have not been modified:</p>
+<p><img alt="Filter By Custom" src="../texts-media/filter-by-custom.png" />
+<em>Notice that the table shows custom values in bold so they are easier to spot.</em></p>
+<h2 id="adding-a-language">Adding a language<a class="headerlink" href="#adding-a-language" title="Permanent link">&para;</a></h2>
+<p>The second big feature of the translations panel is the ability to add languages.
+In the <strong>Actions</strong> section, by clicking on "Add language", the admin can input a language code, like "FR" or "ES", and add it to the system:</p>
+<p><img alt="Add Language" src="../texts-media/add-language.png" /></p>
+<p>This creates a new language with the same default values as English. This means that, at first, switching from English to the new language and back will not change anything. However, the admin can modify the custom values for this new language, which allows for a full translation of the website:</p>
+<p><img alt="New Language" src="../texts-media/new-language.png" />
+<img alt="Old Language" src="../texts-media/old-language.png" />
+<em>Notice that the greeting changes based on the language selected in the sidebar.</em></p>
+<p>This new language is enabled by default, which means that users can select it in the sidebar and see the custom values. If the admin disables it, users will not be able to select it. This allows admins to work on a translation without making it public until it's ready (the admin can still select it in the sidebar for testing). This is what a deactivated language looks like:</p>
+<p><img alt="Deactivated Language" src="../texts-media/deactivated-language.png" />
+<em>Notice that all texts appear as their keys, except for the greeting, which is a custom value that has been set for this language.</em></p>
+<h2 id="removing-a-language">Removing a language<a class="headerlink" href="#removing-a-language" title="Permanent link">&para;</a></h2>
+<p>Every language can be completely deleted, except for English. This is a non-reversible action, so be careful when doing it. If the language might be needed again in the future, it's better to just deactivate it instead of deleting it. Every language, including English, can be deactivated, but the system enforces that at all times at least one language is active. This ensures that users can always select a language in the sidebar and see some text on the website.</p>
 
 
 
@@ -1711,7 +2212,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../colors/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Colors">
+          <a href="../storages/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Storages">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1721,20 +2222,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Colors
+                Storages
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../../blog/" class="md-footer__link md-footer__link--next" aria-label="Next: Blog">
+          <a href="../templates/" class="md-footer__link md-footer__link--next" aria-label="Next: Templates">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Blog
+                Templates
               </div>
             </div>
             <div class="md-footer__button md-icon">

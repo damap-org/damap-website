@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://damap.org/manual/customization/logos/">
+        <link rel="canonical" href="https://damap.org/manual/migration/configuration-variables/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../authentication/">
       
       
-        <link rel="next" href="../colors/">
+        <link rel="next" href="../customizations/">
       
       
         
@@ -24,11 +24,11 @@
         <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../../feed_rss_updated.xml">
       
       <link rel="icon" href="../../../logo.svg">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Customizing logos - DAMAP</title>
+        <title>Configuration variables - DAMAP</title>
       
     
     
@@ -79,7 +79,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#customizing-logos" class="md-skip">
+        <a href="#configuration-variables" class="md-skip">
           Skip to content
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Customizing logos
+              Configuration variables
             
           </span>
         </div>
@@ -538,6 +538,8 @@
       
         
       
+        
+      
     
     
     
@@ -606,8 +608,6 @@
       
         
           
-        
-      
         
       
         
@@ -768,34 +768,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deployment/fits/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    FITS
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../deployment/backend/" class="md-nav__link">
         
   
@@ -864,6 +836,8 @@
       
         
           
+        
+      
         
       
         
@@ -1000,6 +974,34 @@
     
   
     Database
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration/multitenancy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multitenancy
   
 
     
@@ -1193,8 +1195,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1210,6 +1210,14 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -1222,15 +1230,15 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../customization/" class="md-nav__link ">
               
   
   
@@ -1254,7 +1262,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1271,44 +1279,17 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Logos
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../customization/banner/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Logos
+    Banner
   
 
     
@@ -1317,48 +1298,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#method-1-mounting-it-in-the-container" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Method 1: Mounting it in the container
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#method-2-rebuilding-the-container" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Method 2: Rebuilding the container
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1371,7 +1310,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../colors/" class="md-nav__link">
+      <a href="../../customization/colors/" class="md-nav__link">
         
   
   
@@ -1399,7 +1338,91 @@
   
   
     <li class="md-nav__item">
-      <a href="../texts/" class="md-nav__link">
+      <a href="../../customization/images/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Images
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../customization/repositories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Repositories
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../customization/storages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Storages
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../customization/texts/" class="md-nav__link">
         
   
   
@@ -1407,6 +1430,244 @@
     
   
     Texts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../customization/templates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Templates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_6" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Migration to v5.0.0
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6_6" id="__nav_6_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Migration to v5.0.0
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../access/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Access
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../authentication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Authentication
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuration variables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../customizations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Customizations
   
 
     
@@ -1625,36 +1886,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#method-1-mounting-it-in-the-container" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Method 1: Mounting it in the container
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#method-2-rebuilding-the-container" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Method 2: Rebuilding the container
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1673,20 +1904,159 @@
   
 
 
-<h1 id="customizing-logos">Customizing logos<a class="headerlink" href="#customizing-logos" title="Permanent link">&para;</a></h1>
-<p>If you would like to customize the logos on your DAMAP instance, you must provide the logos in the following formats:</p>
-<ul>
-<li><code>logo_cropped.svg</code>: 635x124 pixel SVG (<a href="https://damap.it.tuwien.ac.at/assets/logo-cropped.svg">example</a>)</li>
-<li><code>logo.svg</code>: 842x595 pixel SVG (<a href="https://damap.it.tuwien.ac.at/assets/logo.svg">example</a>)</li>
-</ul>
-<h2 id="method-1-mounting-it-in-the-container">Method 1: Mounting it in the container<a class="headerlink" href="#method-1-mounting-it-in-the-container" title="Permanent link">&para;</a></h2>
-<p>This method mounts the logos into the container from the outside. The correct mount paths are:</p>
-<ul>
-<li><code>/usr/lib/nginx/html/assets/logo-cropped.svg</code></li>
-<li><code>/usr/lib/nginx/html/assets/logo.svg</code></li>
-</ul>
-<h2 id="method-2-rebuilding-the-container">Method 2: Rebuilding the container<a class="headerlink" href="#method-2-rebuilding-the-container" title="Permanent link">&para;</a></h2>
-<p>You can replace the assets <a href="https://github.com/damap-org/damap-frontend/tree/next/apps/damap-frontend/src/assets">in the <code>damap-frontend/tree/next/apps/damap-frontend/src/assets</code> folder in the frontend code</a> and rebuild the frontend from source.</p>
+<h1 id="configuration-variables">Configuration variables<a class="headerlink" href="#configuration-variables" title="Permanent link">&para;</a></h1>
+<p>With DAMAP v5.0.0, we are going away from reconfiguring the application through the <code>application.yaml</code> and are starting to only support environment variables. The table below will map from the old <code>application.yaml</code> values to the new environment variables.</p>
+<table>
+<thead>
+<tr>
+<th>Old Attribute (v4.x.x)</th>
+<th>Environment variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>(None - previously not needed)</em></td>
+<td><code>DAMAP_QUARKUS_PROFILE</code></td>
+<td>Comma seperated profiles, defaults to prod if left empty. Pass <code>multitenant</code> to allow for multiple tenants.</td>
+</tr>
+<tr>
+<td><code>damap.env</code></td>
+<td><code>DAMAP_ENV</code></td>
+<td>Either <code>DEV</code> or <code>PROD</code>.</td>
+</tr>
+<tr>
+<td><code>damap.origins</code></td>
+<td><code>DAMAP_QUARKUS_HTTP_CORS_ORIGINS</code></td>
+<td>The URL the backend should send out in the <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS">CORS header</a>. This should match your frontend URL.</td>
+</tr>
+<tr>
+<td><code>damap.title</code></td>
+<td><code>DAMAP_TENANT_AWARE_TITLE</code></td>
+<td>The name of the DAMAP instance is used to set the HTML title.</td>
+</tr>
+<tr>
+<td><code>damap.gotenbergurl</code></td>
+<td><code>DAMAP_REST_GOTENBERG_MP_REST_URL</code></td>
+<td>URL to your <a href="../../deployment/gotenberg/">Gotenberg service</a>. (e.g. <code>http://gotenberg:3000</code>)</td>
+</tr>
+<tr>
+<td><code>damap.fitsurl</code></td>
+<td><em>None - was removed</em></td>
+<td>Fits container was replaced with a Java library</td>
+</tr>
+<tr>
+<td><code>damap.fields.ethical-report-enabled</code></td>
+<td><code>DAMAP_TENANT_AWARE_FIELDS_ETHICAL_REPORT_ENABLED</code></td>
+<td>If <code>true</code>, enables input field for short ethical report description. Set to <code>false</code> if you want to deactivate the feature, <code>true</code> by default.</td>
+</tr>
+<tr>
+<td><code>damap.elsevier-pure-description-classification</code></td>
+<td><code>DAMAP_TENANT_AWARE_ELSEVIER_PURE_DESCRIPTION_CLASSIFICATION</code></td>
+<td>Project description classification in Pure. Should start with <code>/dk/atira/pure/...</code>.</td>
+</tr>
+<tr>
+<td><code>damap.elsevier-pure-contributor-role-classifications</code></td>
+<td><code>DAMAP_TENANT_AWARE_ELSEVIER_PURE_CONTRIBUTOR_ROLE_CLASSIFICATIONS_0__PURE_ROLE_URI</code></td>
+<td>A pure role url (<a href="../../cris/pure">see Pure section</a>).</td>
+</tr>
+<tr>
+<td><code>damap.elsevier-pure-contributor-role-classifications</code></td>
+<td><code>DAMAP_TENANT_AWARE_ELSEVIER_PURE_CONTRIBUTOR_ROLE_CLASSIFICATIONS_0__CONTRIBUTOR_ROLE</code></td>
+<td>A DAMAP role (<a href="../../cris/pure">see Pure section</a>).</td>
+</tr>
+<tr>
+<td><code>damap.elsevier-pure-project-lead-role-classification</code></td>
+<td><code>DAMAP_TENANT_AWARE_ELSEVIER_PURE_PROJECT_LEAD_ROLE_CLASSIFICATION</code></td>
+<td>The Pure classification for project leads. Should start with <code>/dk/atira/pure/...</code>.</td>
+</tr>
+<tr>
+<td><code>damap.elsevier-pure-backend</code></td>
+<td><code>DAMAP_TENANT_AWARE_ELSEVIER_PURE_BACKEND</code></td>
+<td>Set this to <code>http</code> to use a HTTP server, or to <code>file</code> to read from files. In production, its advised to use the <code>http</code> backend and only rely on <code>file</code> if there is no other way.</td>
+</tr>
+<tr>
+<td><code>damap.elsevier-pure-endpoint-url</code></td>
+<td><code>DAMAP_TENANT_AWARE_ELSEVIER_PURE_ENDPOINT_URL</code></td>
+<td>HTTP endpoint URL when using the <code>http</code> backend. Not necessary when <code>file</code> backend is used.</td>
+</tr>
+<tr>
+<td><code>damap.elsevier-pure-api-key</code></td>
+<td><code>DAMAP_TENANT_AWARE_ELSEVIER_PURE_API_KEY</code></td>
+<td>API key to use for the <code>http</code> backend. Not necessary when <code>file</code> backend is used.</td>
+</tr>
+<tr>
+<td><code>damap.elsevier-pure-projects-file</code></td>
+<td><code>DAMAP_TENANT_AWARE_ELSEVIER_PURE_PROJECTS_FILE</code></td>
+<td>The path to the file containing the projects in JSON format for the <code>file</code> backend. Must start with <code>file:/</code>.</td>
+</tr>
+<tr>
+<td><code>damap.elsevier-pure-persons-file</code></td>
+<td><code>DAMAP_TENANT_AWARE_ELSEVIER_PURE_PERSONS_FILE</code></td>
+<td>The path to the file containing the persons in JSON format for the <code>file</code> backend. Must start with <code>file:/</code>.</td>
+</tr>
+<tr>
+<td><code>damap.projects-service</code></td>
+<td><code>DAMAP_TENANT_AWARE_PROJECT_SERVICE</code></td>
+<td>Determines which project service the application should use. Set to <code>elsevier-pure</code> if you want to use the Pure integration.</td>
+</tr>
+<tr>
+<td><code>damap.person.services</code></td>
+<td><code>DAMAP_TENANT_AWARE_PERSON_SERVICES_0__DISPLAY_TEXT</code></td>
+<td>Text which gets displayed in the frontend when picking the person service type, defaults to <code>University</code></td>
+</tr>
+<tr>
+<td><code>damap.person.services</code></td>
+<td><code>DAMAP_TENANT_AWARE_PERSON_SERVICES_0__QUERY_VALUE</code></td>
+<td>Determines the person service used. Set to <code>PURE</code> for the pure integration. Defaults to <code>UNIVERSITY</code>.</td>
+</tr>
+<tr>
+<td><code>damap.person.services</code></td>
+<td><code>DAMAP_TENANT_AWARE_PERSON_SERVICES_0__CLASS_NAME</code></td>
+<td>Determines the java class used for the custom person service. Set either to your custom class or to <code>org.damap.base.integration.pure.PurePersonService</code> if you want to use PURE.</td>
+</tr>
+<tr>
+<td><code>damap.datasource.url</code></td>
+<td><code>DAMAP_DB_HOST</code></td>
+<td>Host of the database, no trailing slash or protocol (http/https).</td>
+</tr>
+<tr>
+<td><code>damap.datasource.url</code></td>
+<td><code>DAMAP_DB_NAME</code></td>
+<td>Name of the database.</td>
+</tr>
+<tr>
+<td><code>damap.datasource.url</code></td>
+<td><code>DAMAP_DB_PORT</code></td>
+<td>Port of the database.</td>
+</tr>
+<tr>
+<td><code>damap.datasource.db_kind</code></td>
+<td><code>DAMAP_DB_KIND</code></td>
+<td>Your database engine kind (<code>postgresql</code> or <code>oracle</code>).</td>
+</tr>
+<tr>
+<td><code>damap.datasource.username</code></td>
+<td><code>DAMAP_DB_USERNAME</code></td>
+<td>Username for database authentication.</td>
+</tr>
+<tr>
+<td><code>damap.datasource.password</code></td>
+<td><code>DAMAP_DB_PASSWORD</code></td>
+<td>Password for database authentication.</td>
+</tr>
+<tr>
+<td><code>damap.datasource.dialect</code></td>
+<td><em>None - was removed</em></td>
+<td>Now generated from <code>DAMAP_DB_KIND</code>.</td>
+</tr>
+<tr>
+<td><code>damap.datasource.driver</code></td>
+<td><em>None - was removed</em></td>
+<td>Now generated from <code>DAMAP_DB_KIND</code>.</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -1719,7 +2089,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview">
+          <a href="../authentication/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Authentication">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1729,20 +2099,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Overview
+                Authentication
               </div>
             </div>
           </a>
         
         
           
-          <a href="../colors/" class="md-footer__link md-footer__link--next" aria-label="Next: Colors">
+          <a href="../customizations/" class="md-footer__link md-footer__link--next" aria-label="Next: Customizations">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Colors
+                Customizations
               </div>
             </div>
             <div class="md-footer__button md-icon">

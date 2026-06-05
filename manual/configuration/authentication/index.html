@@ -24,11 +24,11 @@
         <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../../feed_rss_updated.xml">
       
       <link rel="icon" href="../../../logo.svg">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Configuring authentication - DAMAP</title>
+        <title>Authentication Setup - DAMAP</title>
       
     
     
@@ -79,7 +79,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#configuring-authentication" class="md-skip">
+        <a href="#damap-authentication-setup" class="md-skip">
           Skip to content
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Configuring authentication
+              Authentication Setup
             
           </span>
         </div>
@@ -347,8 +347,6 @@
           
             
               
-                
-              
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -540,6 +538,8 @@
       
         
       
+        
+      
     
     
     
@@ -608,8 +608,6 @@
       
         
           
-        
-      
         
       
         
@@ -770,34 +768,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deployment/fits/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    FITS
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../deployment/backend/" class="md-nav__link">
         
   
@@ -868,6 +838,8 @@
       
         
           
+        
+      
         
       
         
@@ -977,6 +949,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Authentication
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -993,6 +983,36 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#authentication-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication Configuration
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1014,6 +1034,34 @@
     
   
     Database
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../multitenancy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multitenancy
   
 
     
@@ -1222,6 +1270,14 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -1286,14 +1342,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../customization/logos/" class="md-nav__link">
+      <a href="../../customization/banner/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Logos
+    Banner
   
 
     
@@ -1342,6 +1398,90 @@
   
   
     <li class="md-nav__item">
+      <a href="../../customization/images/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Images
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../customization/repositories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Repositories
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../customization/storages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Storages
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../customization/texts/" class="md-nav__link">
         
   
@@ -1350,6 +1490,232 @@
     
   
     Texts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../customization/templates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Templates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../migration/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Migration to v5.0.0
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6_6" id="__nav_6_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Migration to v5.0.0
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../migration/access/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Access
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../migration/authentication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Authentication
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../migration/configuration-variables/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuration variables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../migration/customizations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Customizations
   
 
     
@@ -1556,9 +1922,7 @@
             
             
               
-                
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1569,6 +1933,25 @@
   
     
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#authentication-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication Configuration
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1582,54 +1965,86 @@
               <article class="md-content__inner md-typeset">
                 
                   
-  
-
 
 
   
   
 
 
-<h1 id="configuring-authentication">Configuring authentication<a class="headerlink" href="#configuring-authentication" title="Permanent link">&para;</a></h1>
-<p>This section details the configuration options you can pass when <a href="../../deployment/backend/">deploying the backend</a>. As described <a href="../">in the overview</a>, we provide both the environment variable for stock deployment and the <code>application.yaml</code> variant for recompilation.</p>
+<h1 id="damap-authentication-setup">DAMAP Authentication Setup<a class="headerlink" href="#damap-authentication-setup" title="Permanent link">&para;</a></h1>
+<p>This section details the configuration options you can pass when <a href="../../deployment/backend/">deploying the backend</a>. As described <a href="../">in the overview</a>, we provide configuration through the environment variable for deployment.</p>
+<p>To allow users to log into DAMAP, the application needs to understand how your institution's login system (Identity Provider) sends user information.</p>
+<p>In DAMAP, you must explicitly tell the system which "claims" (fields of data) in the token correspond to a user's name, email, and ID. All of these settings are defined in your environment variables.</p>
+<h2 id="authentication-configuration">Authentication Configuration<a class="headerlink" href="#authentication-configuration" title="Permanent link">&para;</a></h2>
+<p>The following table breaks down the required authentication properties. You will need to adjust the values based on how your specific OpenID Connect (OIDC) server is configured.</p>
 <table>
 <thead>
 <tr>
-<th>Environment variable</th>
-<th>application.yaml</th>
-<th>Description</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Example Value</th>
+<th style="text-align: left;">What it means</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>DAMAP_AUTH_BACKEND_URL</code></td>
-<td><code>damap.auth.backend.url</code></td>
-<td>The URL the backend can reach the OIDC server on. The URL must be the full path to the realm and the path <code>.well-known/openid-configuration</code> must exist under this URL.</td>
+<td style="text-align: left;"><code>DAMAP_QUARKUS_OIDC_AUTH_SERVER_URL</code></td>
+<td style="text-align: left;"><code>http://keycloak:8080/realms/damap</code></td>
+<td style="text-align: left;">The web address of your login server. DAMAP uses this to verify that a user's login is genuine.</td>
 </tr>
 <tr>
-<td><code>DAMAP_AUTH_FRONTEND_URL</code></td>
-<td><code>damap.auth.frontend.url</code></td>
-<td>The URL the user can reach the OIDC server under. This must be a <code>https://</code> URL unless the hostname is <code>localhost</code>.  The URL must be the full path to the realm and the path <code>.well-known/openid-configuration</code> must exist under this URL.</td>
+<td style="text-align: left;"><code>DAMAP_QUARKUS_OIDC_TOKEN_ISSUER</code></td>
+<td style="text-align: left;"><code>http://localhost:8087/realms/damap</code></td>
+<td style="text-align: left;">The address the frontend uses to send users to the login page, and the trusted source that issues the login tokens.</td>
 </tr>
 <tr>
-<td><code>DAMAP_AUTH_BACKEND_CLIENT</code></td>
-<td><code>damap.auth.backend.client</code></td>
-<td>The client ID configured in the OIDC server for the backend to use. This client ID must be configured to support the authorization code flow with PKCE.</td>
+<td style="text-align: left;"><code>DAMAP_QUARKUS_OIDC_CLIENT_ID</code></td>
+<td style="text-align: left;"><code>damap</code></td>
+<td style="text-align: left;">The specific name or ID your login server uses to recognize the DAMAP application.</td>
 </tr>
 <tr>
-<td><code>DAMAP_AUTH_FRONTEND_CLIENT</code></td>
-<td><code>damap.auth.frontend.client</code></td>
-<td>The client ID configured in the OIDC server for the frontend to use. This client ID must be configured to support the authorization code flow with PKCE.</td>
+<td style="text-align: left;"><code>DAMAP_AUTH_SCOPE</code></td>
+<td style="text-align: left;"><code>openid profile email offline_access microprofile-jwt roles personID</code></td>
+<td style="text-align: left;">A list of permissions DAMAP asks for during login so it can read the user's basic profile information.</td>
 </tr>
 <tr>
-<td><code>DAMAP_AUTH_SCOPE</code></td>
-<td><code>damap.auth.scope</code></td>
-<td>The scopes to request from the OIDC server, separated by space.</td>
+<td style="text-align: left;"><code>DAMAP_AUTH_USER_ID_CLAIM</code></td>
+<td style="text-align: left;"><code>personID</code></td>
+<td style="text-align: left;">The exact field name your login server uses to send a user's unique, permanent ID number.</td>
 </tr>
 <tr>
-<td><code>DAMAP_AUTH_USER</code></td>
-<td><code>damap.auth.user</code></td>
-<td>The OIDC claim to use as a user ID. Defaults to <code>personID</code>.</td>
+<td style="text-align: left;"><code>DAMAP_AUTH_EMAIL_CLAIM</code></td>
+<td style="text-align: left;"><code>email</code></td>
+<td style="text-align: left;">The field name containing the user's email address.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>DAMAP_AUTH_NAME_CLAIM</code></td>
+<td style="text-align: left;"><code>name</code></td>
+<td style="text-align: left;">The field name containing the user's full display name.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>DAMAP_AUTH_GIVEN_NAME_CLAIM</code></td>
+<td style="text-align: left;"><code>given_name</code></td>
+<td style="text-align: left;">The field name containing the user's first name.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>DAMAP_AUTH_FAMILY_NAME_CLAIM</code></td>
+<td style="text-align: left;"><code>family_name</code></td>
+<td style="text-align: left;">The field name containing the user's last name.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>DAMAP_AUTH_AFFILIATIONS_CLAIM</code></td>
+<td style="text-align: left;"><code>affiliation</code></td>
+<td style="text-align: left;">The field name containing the user's institutional affiliation (e.g., whether they are a researcher or student at University A). This is only needed in a multitenant setup.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>DAMAP_AUTH_USER_ROLES_CLAIM_PATH</code></td>
+<td style="text-align: left;"><code>realm_access/roles</code></td>
+<td style="text-align: left;">The location in the access token where DAMAP can find the user's system roles (like admin rights).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>DAMAP_AUTH_ADMIN_ROLE_NAME</code></td>
+<td style="text-align: left;"><code>Damap Admin</code></td>
+<td style="text-align: left;">The exact name of the role that gives a user full administrator privileges over the DAMAP instance.</td>
 </tr>
 </tbody>
 </table>
@@ -1646,8 +2061,6 @@
 
 
 
-  
-
 
 
                 
@@ -1663,8 +2076,6 @@
         <footer class="md-footer">
   
     
-      
-        
       
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         

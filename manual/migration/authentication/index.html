@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://damap.org/manual/deployment/fits/">
+        <link rel="canonical" href="https://damap.org/manual/migration/authentication/">
       
       
-        <link rel="prev" href="../gotenberg/">
+        <link rel="prev" href="../access/">
       
       
-        <link rel="next" href="../backend/">
+        <link rel="next" href="../configuration-variables/">
       
       
         
@@ -24,11 +24,11 @@
         <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../../feed_rss_updated.xml">
       
       <link rel="icon" href="../../../logo.svg">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Deploying the FITS service - DAMAP</title>
+        <title>Authentication - DAMAP</title>
       
     
     
@@ -79,7 +79,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#deploying-the-fits-service-optional" class="md-skip">
+        <a href="#authentication" class="md-skip">
           Skip to content
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Deploying the FITS service
+              Authentication
             
           </span>
         </div>
@@ -538,6 +538,8 @@
       
         
       
+        
+      
     
     
     
@@ -599,8 +601,6 @@
                 
   
   
-    
-  
   
   
     
@@ -608,8 +608,6 @@
       
         
           
-        
-      
         
       
         
@@ -634,15 +632,15 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../deployment/" class="md-nav__link ">
               
   
   
@@ -666,7 +664,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -686,7 +684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../oidc/" class="md-nav__link">
+      <a href="../../deployment/oidc/" class="md-nav__link">
         
   
   
@@ -714,7 +712,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../database/" class="md-nav__link">
+      <a href="../../deployment/database/" class="md-nav__link">
         
   
   
@@ -742,7 +740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gotenberg/" class="md-nav__link">
+      <a href="../../deployment/gotenberg/" class="md-nav__link">
         
   
   
@@ -767,48 +765,10 @@
                 
   
   
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    FITS
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
   
   
     <li class="md-nav__item">
-      <a href="../backend/" class="md-nav__link">
+      <a href="../../deployment/backend/" class="md-nav__link">
         
   
   
@@ -836,7 +796,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../frontend/" class="md-nav__link">
+      <a href="../../deployment/frontend/" class="md-nav__link">
         
   
   
@@ -876,6 +836,8 @@
       
         
           
+        
+      
         
       
         
@@ -1012,6 +974,34 @@
     
   
     Database
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration/multitenancy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multitenancy
   
 
     
@@ -1220,6 +1210,14 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -1284,14 +1282,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../customization/logos/" class="md-nav__link">
+      <a href="../../customization/banner/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Logos
+    Banner
   
 
     
@@ -1340,6 +1338,90 @@
   
   
     <li class="md-nav__item">
+      <a href="../../customization/images/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Images
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../customization/repositories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Repositories
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../customization/storages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Storages
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../customization/texts/" class="md-nav__link">
         
   
@@ -1348,6 +1430,244 @@
     
   
     Texts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../customization/templates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Templates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_6" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Migration to v5.0.0
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6_6" id="__nav_6_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Migration to v5.0.0
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../access/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Access
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Authentication
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configuration-variables/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuration variables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../customizations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Customizations
   
 
     
@@ -1584,34 +1904,86 @@
   
 
 
-<h1 id="deploying-the-fits-service-optional">Deploying the FITS service (optional)<a class="headerlink" href="#deploying-the-fits-service-optional" title="Permanent link">&para;</a></h1>
-<p>DAMAP uses <a href="https://github.com/Islandora/islandora_fits">Islandora FITS</a> to automatically detect data types for datasets researchers add to DMPs. If you would like to make use of this functionality, you will need to deploy the FITS service.</p>
-<p>We currently recommend deploying FITS using the <code>islandora/fits:main</code> container image. This exposes the FITS service on port 8080, which the DAMAP backend uses.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>The FITS service should never be exposed to the Internet!</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>While the FITS service can be deployed without a container, we have no information or documentation on how to achieve such a setup.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>The <code>islandora/fits:main</code> unfortunately runs as <code>root</code> inside the container. It is therefore not possible to deploy this service in a restricted OpenShift environment. We also do not support this service as part of our Helm chart.</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Due to the many shortcomings of this service, we are currently working on deprecating it and replacing it with a variant built directly into DAMAP.</p>
-</div>
+<h1 id="authentication">Authentication<a class="headerlink" href="#authentication" title="Permanent link">&para;</a></h1>
+<p>Older versions of DAMAP made hardcoded assumptions about how your login server worked. Version 5.0.0 gives you full control, but this means you must explicitly map your configuration settings to the new format.</p>
+<p>Every attribute related to user identity must now be clearly defined in your environment variables (the previous approach using the application.yml is getting deprecated). Please update your configuration by replacing the old attributes with the new ones, and adding the required new fields:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Old Attribute (v4.x)</th>
+<th style="text-align: left;">New Attribute (v5.0.0) - Env Variable</th>
+<th style="text-align: left;">What it means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>damap.auth.backend.url</code></td>
+<td style="text-align: left;"><code>DAMAP_QUARKUS_OIDC_AUTH_SERVER_URL</code></td>
+<td style="text-align: left;">The address the backend uses to verify user logins.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>damap.auth.backend.client</code></td>
+<td style="text-align: left;"><code>DAMAP_QUARKUS_OIDC_CLIENT_ID</code></td>
+<td style="text-align: left;">The application's registered ID on your login server.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>damap.auth.frontend.url</code></td>
+<td style="text-align: left;"><code>DAMAP_QUARKUS_OIDC_TOKEN_ISSUER</code></td>
+<td style="text-align: left;">The trusted source that issues the login tokens and the address the frontend redirects users to for login.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>damap.auth.user</code></td>
+<td style="text-align: left;"><code>DAMAP_AUTH_USER_ID_CLAIM</code></td>
+<td style="text-align: left;">Tells DAMAP which field holds the user's unique login ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><em>(None - previously hardcoded)</em></td>
+<td style="text-align: left;"><code>DAMAP_AUTH_EMAIL_CLAIM</code></td>
+<td style="text-align: left;">You must now explicitly state which field holds the user's email address.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><em>(None - previously hardcoded)</em></td>
+<td style="text-align: left;"><code>DAMAP_AUTH_NAME_CLAIM</code></td>
+<td style="text-align: left;">You must now explicitly state which field holds the user's full display name.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><em>(None - previously hardcoded)</em></td>
+<td style="text-align: left;"><code>DAMAP_AUTH_GIVEN_NAME_CLAIM</code></td>
+<td style="text-align: left;">You must now explicitly state which field holds the user's first name.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><em>(None - previously hardcoded)</em></td>
+<td style="text-align: left;"><code>DAMAP_AUTH_FAMILY_NAME_CLAIM</code></td>
+<td style="text-align: left;">You must now explicitly state which field holds the user's last name.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><em>(None - previously hardcoded)</em></td>
+<td style="text-align: left;"><code>DAMAP_AUTH_AFFILIATIONS_CLAIM</code></td>
+<td style="text-align: left;">You must now explicitly state which field holds the user's institutional affiliation (e.g., whether they are a researcher at University A). This is only needed in a multitenant setup.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><em>(None - previously hardcoded)</em></td>
+<td style="text-align: left;"><code>DAMAP_AUTH_USER_ROLES_CLAIM_PATH</code></td>
+<td style="text-align: left;">The location in the access token where DAMAP can find the user's system roles (like admin rights).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><em>(None - previously hardcoded)</em></td>
+<td style="text-align: left;"><code>DAMAP_AUTH_ADMIN_ROLE_NAME</code></td>
+<td style="text-align: left;">The exact name of the role that gives a user full administrator privileges over the DAMAP instance.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><em>(None - previously hardcoded)</em></td>
+<td style="text-align: left;"><code>DAMAP_AUTH_SCOPE</code></td>
+<td style="text-align: left;">A list of permissions DAMAP asks for during login so it can read the user's basic profile information.</td>
+</tr>
+</tbody>
+</table>
 
 
 
 
 
 
-
-  
-  
 
 
 
@@ -1635,7 +2007,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../gotenberg/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Gotenberg">
+          <a href="../access/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Access">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1645,20 +2017,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Gotenberg
+                Access
               </div>
             </div>
           </a>
         
         
           
-          <a href="../backend/" class="md-footer__link md-footer__link--next" aria-label="Next: Backend">
+          <a href="../configuration-variables/" class="md-footer__link md-footer__link--next" aria-label="Next: Configuration variables">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Backend
+                Configuration variables
               </div>
             </div>
             <div class="md-footer__button md-icon">
