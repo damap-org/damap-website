@@ -1,6 +1,7 @@
 title: Migration to v5.0.0
 nav:
 - Overview: index.md
+- Deployment: deployment.md
 - Access: access.md
 - Authentication: authentication.md
 - Configuration variables: configuration-variables.md
