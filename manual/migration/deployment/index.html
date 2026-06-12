@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://damap.org/manual/configuration/multitenancy/">
+        <link rel="canonical" href="https://damap.org/manual/migration/deployment/">
       
       
-        <link rel="prev" href="../database/">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="../../cris/">
+        <link rel="next" href="../access/">
       
       
         
@@ -28,7 +28,7 @@
     
     
       
-        <title>Multitenancy - DAMAP</title>
+        <title>Deployment changes - DAMAP</title>
       
     
     
@@ -79,7 +79,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#multitenancy" class="md-skip">
+        <a href="#deployment-changes" class="md-skip">
           Skip to content
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Multitenancy
+              Deployment changes
             
           </span>
         </div>
@@ -346,8 +346,6 @@
         <div class="md-main__inner md-grid">
           
             
-              
-                
               
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
@@ -831,8 +829,6 @@
                 
   
   
-    
-  
   
   
     
@@ -862,15 +858,15 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../configuration/" class="md-nav__link ">
               
   
   
@@ -894,7 +890,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -914,7 +910,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../general/" class="md-nav__link">
+      <a href="../../configuration/general/" class="md-nav__link">
         
   
   
@@ -942,7 +938,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../authentication/" class="md-nav__link">
+      <a href="../../configuration/authentication/" class="md-nav__link">
         
   
   
@@ -970,7 +966,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../database/" class="md-nav__link">
+      <a href="../../configuration/database/" class="md-nav__link">
         
   
   
@@ -995,37 +991,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Multitenancy
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../configuration/multitenancy/" class="md-nav__link">
         
   
   
@@ -1041,59 +1010,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#oidc-server" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        OIDC server
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#multitenancy-configuration-file" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Multitenancy configuration file
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#creating-new-databases" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Creating new databases
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1567,8 +1483,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -1598,15 +1516,15 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_6" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../migration/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -1630,7 +1548,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1647,10 +1565,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../migration/deployment/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1666,6 +1593,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1678,7 +1606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../migration/access/" class="md-nav__link">
+      <a href="../access/" class="md-nav__link">
         
   
   
@@ -1706,7 +1634,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../migration/authentication/" class="md-nav__link">
+      <a href="../authentication/" class="md-nav__link">
         
   
   
@@ -1734,7 +1662,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../migration/configuration-variables/" class="md-nav__link">
+      <a href="../configuration-variables/" class="md-nav__link">
         
   
   
@@ -1762,7 +1690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../migration/customizations/" class="md-nav__link">
+      <a href="../customizations/" class="md-nav__link">
         
   
   
@@ -1976,9 +1904,7 @@
             
             
               
-                
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1989,47 +1915,6 @@
   
     
   
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#oidc-server" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        OIDC server
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#multitenancy-configuration-file" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Multitenancy configuration file
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#creating-new-databases" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Creating new databases
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -2043,87 +1928,21 @@
               <article class="md-content__inner md-typeset">
                 
                   
-  
-
 
 
   
   
 
 
-<h1 id="multitenancy">Multitenancy<a class="headerlink" href="#multitenancy" title="Permanent link">&para;</a></h1>
-<p>To activate multitenancy mode, three things are needed</p>
-<ol>
-<li>Set the <code>DAMAP_QUARKUS_PROFILE</code> environment variable to <code>multitenant,prod</code></li>
-<li>Prepare an <a href="../authentication.md">OIDC server</a> that can provide affiliation informatio</li>
-<li>Prepare a multitenancy configuration file</li>
-<li>Create a database for each tenant</li>
-</ol>
-<h2 id="oidc-server">OIDC server<a class="headerlink" href="#oidc-server" title="Permanent link">&para;</a></h2>
-<p>The OIDC server needs to be able to supply an affiliation claim, so DAMAP can map the user to the fitting tenant database.
-This affiliation claim should be unique per tenant university. 
-From this claim, the tenant id is generated, by replacing every non-alphanumeric character with an <code>_</code> and removing
-duplicates.
-Its important to find your tenant id before you proceed to set up multitenancy.</p>
-<h2 id="multitenancy-configuration-file">Multitenancy configuration file<a class="headerlink" href="#multitenancy-configuration-file" title="Permanent link">&para;</a></h2>
-<p>To onboard new tenants, DAMAP loads a configuration file, which can sit outside the classpath. 
-This enables reconfiguration without needing to build a new image by using <a href="https://quarkus.io/guides/reaugmentation">Quarkus re-augmentation</a>.
-The location this file is loaded from is set by the <code>QUARKUS_CONFIG_LOCATIONS</code> env variable, which is set to
-<code>/opt/damap/tenants.yaml</code> by default.</p>
-<p>A sample <a href="https://github.com/damap-org/damap-backend/blob/next/docker/tenants.yaml"><code>tenants.yaml</code></a> is provided on GitHub.</p>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>tenant-list</code></td>
-<td>A list containing all tenant ids.</td>
-</tr>
-<tr>
-<td><code>tenant-configs</code></td>
-<td>Here you can provide different configurations options for each tenant. <code>tenant_1</code> in the example file is a standin for the tenant id. The possible configurations are all of those environemnt variables with the <code>TENANT_AWARE</code> prefix.</td>
-</tr>
-</tbody>
-</table>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>The <a href="https://artifacthub.io/packages/helm/damap/damap-chart">Helm chart</a> provides automated support for generating this file.</p>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Instead of creating a <code>tenants.yaml</code> file, its also possible to supply environment variables for each configuration option.</p>
-</div>
-<h2 id="creating-new-databases">Creating new databases<a class="headerlink" href="#creating-new-databases" title="Permanent link">&para;</a></h2>
-<p>Each tenant needs its own, separated database.
-It's recommended to create a new database for each tenant in the same database server.
-The new databases need to have the exact same database name as the tenants id, as described above.
-If the database name and the tenant id don't match, Quarkus won't be able to redirect traffic to the correct database.</p>
-<p>Additionally, every tenant needs the following configuration blocks added to the <code>tenants.yaml</code> file:</p>
-<div class="highlight"><pre><span></span><code>&quot;%multitenant&quot;:
-  quarkus:
-    datasource:
-      tenant_1:
-        jdbc:
-          url: jdbc:postgresql://damap-db:5432/tenant_1
-          driver: ${quarkus.datasource.jdbc.driver}
-        db-kind: ${quarkus.datasource.db-kind}
-        username: ${quarkus.datasource.username}
-        password: ${quarkus.datasource.password}
-
-    liquibase:
-      tenant_1:
-        migrate-at-start: true
-        change-log: org/damap/base/db/changeLog-root.yaml
-</code></pre></div>
-<p>Replace <code>tenant_1</code> with the tenant id and set the <code>jdbc.url</code> to your tenants database url. </p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>The default DAMAP database (single tenant setup) is still needed, as Quarkus requires a "bootstrap" database
-to function in multitenancy mode.</p>
+<h1 id="deployment-changes">Deployment changes<a class="headerlink" href="#deployment-changes" title="Permanent link">&para;</a></h1>
+<p>With v5.0.0 we now officially only support dockerized and kubernetes based deployments.
+Making changes in the codebase of your own deployment to customize the application won't be actively supported anymore.
+Nothing stops you from doing it, but be aware of the risks - this might lead to overhead since you need to rebase
+everytime a new version is released.</p>
+<div class="admonition note">
+<p class="admonition-title">Docker Setup</p>
+<p>DAMAPs docker setup has gotten a rather big overhaul in v5.0.0. For more information view the
+<a href="../../deployment">deployment documentation</a> and the further pages of this section.</p>
 </div>
 
 
@@ -2137,8 +1956,6 @@ to function in multitenancy mode.</p>
 
 
 
-
-  
 
 
 
@@ -2156,12 +1973,10 @@ to function in multitenancy mode.</p>
   
     
       
-        
-      
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../database/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Database">
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2171,20 +1986,20 @@ to function in multitenancy mode.</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                Database
+                Overview
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../cris/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
+          <a href="../access/" class="md-footer__link md-footer__link--next" aria-label="Next: Access">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Overview
+                Access
               </div>
             </div>
             <div class="md-footer__button md-icon">
