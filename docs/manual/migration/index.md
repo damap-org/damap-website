@@ -10,6 +10,8 @@ We offer an [example.env](https://github.com/damap-org/damap-backend/blob/next/e
 
 The following migration sections highlight the most important changes:
 
-- [Authentication](authentication.md)
+- [Deployment](deployment.md)
 - [Access](access.md)
+- [Authentication](authentication.md)
 - [Configuration Variables](configuration-variables.md)
+- [Customizations](customizations.md)
