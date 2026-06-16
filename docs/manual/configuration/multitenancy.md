@@ -16,11 +16,21 @@ To activate multitenancy mode, three things are needed
 
 ## OIDC server
 
-The OIDC server needs to be able to supply an affiliation claim, so DAMAP can map the user to the fitting tenant database.
-This affiliation claim should be unique per tenant university. 
-From this claim, the tenant id is generated, by replacing every non-alphanumeric character with an `_` and removing
+The OIDC server needs to be able to supply an affiliation claim compliant with the 
+[eduPersonScopedAffiliation attribute](https://wiki.univie.ac.at/spaces/federation/pages/47025278/eduPersonScopedAffiliation)
+, so DAMAP can map the user to the fitting tenant database.
+These affiliations are structured like `role@affiliation`.
+DAMAP uses the right `affiliation` part as a tenants affiliation, which should be unique across different tenants.
+Most universities use their email domain for example.
+From this affiliation, the tenant id is generated, by replacing every non-alphanumeric character with an `_` and removing
 duplicates.
 Its important to find your tenant id before you proceed to set up multitenancy.
+
+!!!example
+    DAMAP receives an affiliation list like `[member@tuwien.ac.at, staff@tuwien.ac.at]`. It removes the left
+    [eduPersonAffiliation](https://wiki.refeds.org/pages/viewpage.action?pageId=50626629#eduPerson202001-eduPersonAffiliation)
+    and eliminates duplicates, which leaves it with `tuwien.ac.at`. Now every non-alphanumeric character is replaced with `_`.
+    The final tenant id is then `tuwien_ac_at`.
 
 ## Multitenancy configuration file
 
