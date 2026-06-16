@@ -2060,11 +2060,22 @@
 <li>Create a database for each tenant</li>
 </ol>
 <h2 id="oidc-server">OIDC server<a class="headerlink" href="#oidc-server" title="Permanent link">&para;</a></h2>
-<p>The OIDC server needs to be able to supply an affiliation claim, so DAMAP can map the user to the fitting tenant database.
-This affiliation claim should be unique per tenant university. 
-From this claim, the tenant id is generated, by replacing every non-alphanumeric character with an <code>_</code> and removing
+<p>The OIDC server needs to be able to supply an affiliation claim compliant with the 
+<a href="https://wiki.univie.ac.at/spaces/federation/pages/47025278/eduPersonScopedAffiliation">eduPersonScopedAffiliation attribute</a>
+, so DAMAP can map the user to the fitting tenant database.
+These affiliations are structured like <code>role@affiliation</code>.
+DAMAP uses the right <code>affiliation</code> part as a tenants affiliation, which should be unique across different tenants.
+Most universities use their email domain for example.
+From this affiliation, the tenant id is generated, by replacing every non-alphanumeric character with an <code>_</code> and removing
 duplicates.
 Its important to find your tenant id before you proceed to set up multitenancy.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>DAMAP receives an affiliation list like <code>[member@tuwien.ac.at, staff@tuwien.ac.at]</code>. It removes the left
+<a href="https://wiki.refeds.org/pages/viewpage.action?pageId=50626629#eduPerson202001-eduPersonAffiliation">eduPersonAffiliation</a>
+and eliminates duplicates, which leaves it with <code>tuwien.ac.at</code>. Now every non-alphanumeric character is replaced with <code>_</code>.
+The final tenant id is then <code>tuwien_ac_at</code>.</p>
+</div>
 <h2 id="multitenancy-configuration-file">Multitenancy configuration file<a class="headerlink" href="#multitenancy-configuration-file" title="Permanent link">&para;</a></h2>
 <p>To onboard new tenants, DAMAP loads a configuration file, which can sit outside the classpath. 
 This enables reconfiguration without needing to build a new image by using <a href="https://quarkus.io/guides/reaugmentation">Quarkus re-augmentation</a>.
