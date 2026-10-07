@@ -19,9 +19,10 @@ This section details the general configuration options you can pass when [deploy
 
 ### REST
 
-| Environment variable               | Description                    |
-|------------------------------------|--------------------------------|
-| `DAMAP_REST_GOTENBERG_MP_REST_URL` | URL to your Gotenberg service. |
+| Environment variable                        | Description                                                                                                                                                                              |
+|---------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `DAMAP_REST_GOTENBERG_MP_REST_URL`          | URL to your Gotenberg service.                                                                                                                                                           |
+| `DAMAP_TENANT_AWARE_EVALUATION_SERVICE_URL` | URL to your evaluation service. Leaving this variable empty deactivates the feature in the frontend. For testing, the value `https://ostrails-dmp-evaluation.arisnet.ac.at` can be used. |
 
 ### Fields
 
