@@ -1,3 +1,7 @@
+---
+title: RDA Common maDMP API Implementation
+---
+
 # RDA Common maDMP API Implementation
 
 DAMAP fully implements [v0.2.0](https://github.com/RDA-DMP-Common/common-madmp-api) of the RDA Common maDMP API, which is a common baseline API for exchanging machine actionable DMPs.
