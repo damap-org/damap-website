@@ -19,7 +19,7 @@ title: DAMAP - Simplifying Data Management Plans
     <div class="infobox__item">
         <div class="infobox__title">Latest blog post</div>
         <div class="infobox__data">
-            <span class="infobox__text"><a href="/blog/2025/07/15/an-early-look-at-the-common-dmp-api/">An early look at the common DMP API</a></span>
+            <span class="infobox__text"><a href="/blog/2026/11/03/damap-now-runs-in-the-polish-eosc-node/">DAMAP now runs in the Polish EOSC Node</a></span>
         </div>
     </div>
     <div class="infobox__item">
