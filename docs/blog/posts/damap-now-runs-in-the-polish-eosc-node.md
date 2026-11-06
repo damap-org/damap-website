@@ -7,14 +7,15 @@ description: The DAMAP-PL project brought DAMAP into the Polish EOSC Node. We ex
 # DAMAP now runs in the Polish EOSC Node
 
 By Tomasz Miksa
-
-<p class="center" markdown>
-![DAMAP-PL, EOSC Gravity, Funded by the European Union](../assets/damap-pl/damap-pl-logo.png)
-</p>
+{ .blog-author }
 
 DAMAP is now available as a service in the Polish EOSC Node. The DAMAP-PL project, which brought it there, has ended successfully. In this post we explain what the project set out to do, what it delivered and what we learned along the way.
 
 <!-- more -->
+
+<p class="center" markdown>
+![DAMAP-PL, EOSC Gravity, Funded by the European Union](../assets/damap-pl/damap-pl-logo.png)
+</p>
 
 ## What DAMAP-PL was about
 

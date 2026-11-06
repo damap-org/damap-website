@@ -47,6 +47,11 @@
     text-align: center;
 }
 
+.md-typeset .blog-author {
+    color: var(--md-default-fg-color--light);
+    font-size: .7rem;
+}
+
 .grid.grid__4 {
     grid-template-columns: repeat(auto-fit,minmax(min(100%,12rem),1fr));
 }
